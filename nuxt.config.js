@@ -1,52 +1,51 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'project-template-nuxt',
-    htmlAttrs: {
-      lang: 'en',
-    },
+    title: 'Acefluento — Meta Ads & Digital Marketing Agency',
+    htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Acefluento helps brands scale with high-converting Meta Ads, creative strategy, and data-driven paid social campaigns. Turn cold traffic into loyal customers.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      { property: 'og:title', content: 'Acefluento — Meta Ads & Digital Marketing Agency' },
+      {
+        property: 'og:description',
+        content: 'Scale your brand with Meta Ads that actually convert. Book a free strategy call today.',
+      },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap',
+      },
+    ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/main.css'],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-  ],
+  modules: ['@nuxtjs/axios'],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+  axios: { baseURL: '/' },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  
-  // Disable telemetry prompt when starting the dev server
+
   telemetry: false,
 }
