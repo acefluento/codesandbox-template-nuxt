@@ -1,4 +1,6 @@
 {
+  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider yarn generate",
+  "outputDirectory": "dist",
   "build": {
     "env": {
       "NODE_OPTIONS": "--openssl-legacy-provider"
