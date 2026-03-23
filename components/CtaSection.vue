@@ -17,68 +17,34 @@
         opportunities, and show you exactly how we'd scale your brand.
       </p>
 
-      <!-- Form -->
-      <form class="max-w-xl mx-auto" @submit.prevent="onSubmit">
-        <div class="flex flex-col sm:flex-row gap-3 mb-4">
-          <input
-            v-model="form.name"
-            type="text"
-            placeholder="Your name"
-            class="flex-1 px-5 py-4 rounded-xl bg-white/6 border border-white/15 text-white placeholder-white/30 text-sm focus:outline-none focus:border-brand-blue/60 transition-colors"
-            required
-          />
-          <input
-            v-model="form.email"
-            type="email"
-            placeholder="Work email"
-            class="flex-1 px-5 py-4 rounded-xl bg-white/6 border border-white/15 text-white placeholder-white/30 text-sm focus:outline-none focus:border-brand-blue/60 transition-colors"
-            required
-          />
-        </div>
+      <!-- Calendly Inline Widget -->
+      <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-xl shadow-brand-blue/10">
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/acefluento/growth-strategy-call-with-nolan?hide_event_type_details=0&hide_gdpr_banner=1&background_color=111118&text_color=ffffff&primary_color=1877F2"
+          style="min-width:320px;height:700px;"
+        ></div>
+      </div>
 
-        <div class="flex gap-3 mb-6">
-          <select
-            v-model="form.budget"
-            class="flex-1 px-5 py-4 rounded-xl bg-white/6 border border-white/15 text-white/70 text-sm focus:outline-none focus:border-brand-blue/60 transition-colors appearance-none"
-          >
-            <option value="" disabled selected>Monthly ad budget</option>
-            <option value="3k-15k">$3K – $15K</option>
-            <option value="15k-75k">$15K – $75K</option>
-            <option value="75k+">$75K+</option>
-          </select>
-          <select
-            v-model="form.industry"
-            class="flex-1 px-5 py-4 rounded-xl bg-white/6 border border-white/15 text-white/70 text-sm focus:outline-none focus:border-brand-blue/60 transition-colors appearance-none"
-          >
-            <option value="" disabled selected>Industry</option>
-            <option>eCommerce</option>
-            <option>SaaS / Tech</option>
-            <option>Health & Wellness</option>
-            <option>Finance</option>
-            <option>Education</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <button
-          type="submit"
-          class="btn-orange w-full text-base py-4 gap-2 group"
-          :disabled="submitted"
-        >
-          <span v-if="!submitted">
-            Book My Free Strategy Call
-            <svg class="w-5 h-5 inline group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </span>
-          <span v-else class="flex items-center justify-center gap-2">
-            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-            </svg>
-            Request Sent! We'll be in touch within 24 hours.
-          </span>
-        </button>
-      </form>
+      <!-- Direct contact -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-white/50 text-sm">
+        <a href="tel:2168083109" class="flex items-center gap-2 hover:text-white transition-colors">
+          <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+          216-808-3109
+        </a>
+        <span class="w-px h-4 bg-white/15"></span>
+        <a href="mailto:Acefluento@gmail.com" class="flex items-center gap-2 hover:text-white transition-colors">
+          <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          Acefluento@gmail.com
+        </a>
+        <span class="w-px h-4 bg-white/15"></span>
+        <span>M–F 8AM–8PM EST</span>
+      </div>
 
       <!-- Trust signals -->
       <div class="flex flex-wrap items-center justify-center gap-6 mt-10 text-white/35 text-sm">
@@ -104,22 +70,5 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'CtaSection',
-  data() {
-    return {
-      submitted: false,
-      form: {
-        name: '',
-        email: '',
-        budget: '',
-        industry: '',
-      },
-    }
-  },
-  methods: {
-    onSubmit() {
-      // In production, integrate with CRM / Calendly / email
-      this.submitted = true
-    },
-  },
 })
 </script>

@@ -11,7 +11,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Acefluento helps brands scale with high-converting Meta Ads, creative strategy, and data-driven paid social campaigns. Turn cold traffic into loyal customers.',
+          'Acefluento LLC — Cleveland, OH digital marketing agency. Meta Ads, SEO, web development, and content marketing. Turn cold traffic into loyal customers. Call 216-808-3109.',
       },
       { name: 'format-detection', content: 'telephone=no' },
       { property: 'og:title', content: 'Acefluento — Meta Ads & Digital Marketing Agency' },
@@ -30,6 +30,10 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap',
       },
+      { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' },
+    ],
+    script: [
+      { src: 'https://assets.calendly.com/assets/external/widget.js', defer: true },
     ],
   },
 
