@@ -1,5 +1,18 @@
 <template>
-  <Tutorial />
+  <div class="min-h-screen bg-brand-dark text-white font-sans">
+    <TheNavbar />
+    <main>
+      <HeroSection />
+      <LogoBar />
+      <ServicesSection />
+      <ResultsSection />
+      <ProcessSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <CtaSection />
+    </main>
+    <TheFooter />
+  </div>
 </template>
 
 <script lang="ts">
