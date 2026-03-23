@@ -12,15 +12,39 @@
             </div>
             <span class="text-xl font-bold">Ace<span class="text-brand-blue">fluento</span></span>
           </a>
-          <p class="text-white/45 text-sm leading-relaxed max-w-xs mb-6">
-            The Meta Ads agency for brands serious about growth. We turn cold traffic into predictable, scalable revenue.
+          <p class="text-white/45 text-sm leading-relaxed max-w-xs mb-4">
+            A modern digital marketing agency based in Cleveland, OH. Meta Ads, SEO, web development, and content strategy for brands ready to grow.
           </p>
+          <!-- Contact info -->
+          <div class="space-y-2 mb-5">
+            <a href="tel:2168083109" class="flex items-center gap-2 text-white/40 text-xs hover:text-white transition-colors">
+              <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              216-808-3109 · M–F 8AM–8PM
+            </a>
+            <a href="mailto:Acefluento@gmail.com" class="flex items-center gap-2 text-white/40 text-xs hover:text-white transition-colors">
+              <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              Acefluento@gmail.com
+            </a>
+            <div class="flex items-center gap-2 text-white/40 text-xs">
+              <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+              </svg>
+              Cleveland, OH
+            </div>
+          </div>
           <!-- Social -->
           <div class="flex gap-3">
             <a
               v-for="social in socials"
               :key="social.name"
               :href="social.href"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-9 h-9 rounded-lg bg-white/6 border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:bg-brand-blue hover:border-brand-blue transition-all duration-200"
               :aria-label="social.name"
             >
@@ -44,7 +68,7 @@
 
       <!-- Bottom bar -->
       <div class="pt-8 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/35 text-xs">
-        <span>© {{ new Date().getFullYear() }} Acefluento. All rights reserved.</span>
+        <span>© {{ new Date().getFullYear() }} Acefluento LLC · Cleveland, OH. All rights reserved.</span>
         <div class="flex items-center gap-1 text-white/25">
           <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse-slow"></span>
           <span>All systems operational</span>
@@ -66,10 +90,9 @@ export default Vue.extend({
   data() {
     return {
       socials: [
-        { name: 'Facebook', short: 'f', href: '#' },
-        { name: 'Instagram', short: 'ig', href: '#' },
-        { name: 'LinkedIn', short: 'in', href: '#' },
-        { name: 'Twitter', short: 'x', href: '#' },
+        { name: 'Facebook', short: 'f', href: 'https://www.facebook.com/share/1DZVeSSLNz/?mibextid=wwXIfr' },
+        { name: 'LinkedIn', short: 'in', href: 'https://www.linkedin.com/in/nolan-coats' },
+        { name: 'YouTube', short: 'yt', href: 'https://youtu.be/OHDo7ov95Z4?si=uHK0zo87RDCOAaJ1' },
       ],
       footerLinks: [
         {

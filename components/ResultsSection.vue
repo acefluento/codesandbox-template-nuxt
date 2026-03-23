@@ -11,7 +11,7 @@
           Real Numbers. <span class="gradient-text">Real Businesses.</span>
         </h2>
         <p class="text-white/55 text-lg max-w-2xl mx-auto">
-          We don't run ads. We build revenue machines. Here's proof.
+          Real clients. Real campaigns. Real results — right here in Cleveland and beyond.
         </p>
       </div>
 
@@ -82,53 +82,53 @@ export default Vue.extend({
     return {
       caseStudies: [
         {
-          brand: 'FitFlow Apparel',
-          niche: 'eCommerce · Fitness',
-          tag: 'eComm',
+          brand: 'CHVDJUSTIN (Wearpack)',
+          niche: 'Fashion Tech · eCommerce',
+          tag: 'Fashion',
           tagClass: 'bg-purple-500/15 text-purple-400',
           accentColor: 'bg-gradient-to-r from-purple-500 to-pink-500',
           metrics: [
-            { label: 'Monthly Revenue', value: '$312K', green: false },
-            { label: 'ROAS', value: '6.2×', green: true },
-            { label: 'Cost Per Purchase', value: '$18.40', green: false },
-            { label: 'Revenue Growth', value: '+284%', green: true },
+            { label: 'Services', value: 'Meta Ads + SEO', green: false },
+            { label: 'FB Campaigns', value: 'Active & Scaling', green: true },
+            { label: 'Website SEO', value: 'Fully Optimized', green: true },
+            { label: 'Product Launches', value: 'Successful', green: true },
           ],
-          quote: 'Within 60 days we went from struggling to scale to our best month ever.',
+          quote: 'Acefluento LLC has offered my brand Chvd Justin amazing services, helping us establish our SEO and grow our digital audience.',
         },
         {
-          brand: 'TechVault SaaS',
-          niche: 'SaaS · B2B',
-          tag: 'SaaS',
+          brand: 'Creative Living Care Group Inc.',
+          niche: 'Healthcare · Assisted Living · Clearwater, FL',
+          tag: 'Healthcare',
+          tagClass: 'bg-teal-500/15 text-teal-400',
+          accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
+          metrics: [
+            { label: 'Services', value: 'Web Design + Local SEO', green: false },
+            { label: 'Digital Footprint', value: 'Zero → Full', green: true },
+            { label: 'Google Business', value: 'Optimized', green: true },
+            { label: 'Local Search', value: 'Indexed & Ranking', green: true },
+          ],
+          quote: 'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our assisted living brand.',
+        },
+        {
+          brand: 'Euclid Church of Christ',
+          niche: 'Non-Profit · Community · Cleveland, OH',
+          tag: 'Non-Profit',
           tagClass: 'bg-brand-blue/15 text-brand-blue',
           accentColor: 'bg-gradient-to-r from-brand-blue to-cyan-400',
           metrics: [
-            { label: 'Monthly Trials', value: '1,840', green: false },
-            { label: 'Cost Per Trial', value: '$8.20', green: true },
-            { label: 'Trial-to-Paid Rate', value: '34%', green: true },
-            { label: 'CAC Reduction', value: '-61%', green: true },
+            { label: 'Services', value: 'Social + YouTube', green: false },
+            { label: 'YouTube Campaign', value: 'Live', green: true },
+            { label: 'Subscriber Strategy', value: 'Deployed', green: true },
+            { label: 'Community Reach', value: 'Expanded', green: true },
           ],
-          quote: 'Our CAC dropped by 61% in 45 days. Acefluento changed everything.',
-        },
-        {
-          brand: 'LuxeDerm Skincare',
-          niche: 'DTC · Beauty',
-          tag: 'DTC',
-          tagClass: 'bg-orange-500/15 text-orange-400',
-          accentColor: 'bg-gradient-to-r from-orange-500 to-yellow-400',
-          metrics: [
-            { label: 'Launch Revenue', value: '$87K', green: false },
-            { label: 'ROAS (Month 1)', value: '4.1×', green: true },
-            { label: 'Email List Grew', value: '+12,400', green: true },
-            { label: 'Return Rate', value: '68%', green: true },
-          ],
-          quote: 'We launched a new product line and hit $87K in month one. Incredible.',
+          quote: 'Acefluento helped us build a real digital presence and grow our congregation\'s online community effectively.',
         },
       ],
       globalStats: [
-        { value: '$50M+', label: 'Total Ad Spend Managed', color: 'text-white' },
-        { value: '4.8×', label: 'Average Client ROAS', color: 'text-green-400' },
-        { value: '200+', label: 'Brands Scaled', color: 'text-brand-blue' },
-        { value: '94%', label: 'Client Retention Rate', color: 'text-orange-400' },
+        { value: '6+', label: 'Brands & Orgs Served', color: 'text-white' },
+        { value: '5.0 ★', label: 'The Manifest Rating', color: 'text-green-400' },
+        { value: 'Top 20', label: 'Event Marketing (The Manifest)', color: 'text-brand-blue' },
+        { value: '100%', label: 'Client Satisfaction', color: 'text-orange-400' },
       ],
     }
   },

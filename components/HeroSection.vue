@@ -20,7 +20,7 @@
         <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
           <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse-slow"></span>
-          Meta Business Partner · $50M+ Ad Spend Managed
+          Digital Marketing Agency · Cleveland, OH · Est. 2022
         </div>
 
         <!-- Headline -->
@@ -117,9 +117,9 @@ export default Vue.extend({
   data() {
     return {
       metrics: [
-        { value: '4.8×', label: 'Average ROAS Delivered' },
-        { value: '200+', label: 'Brands Scaled' },
-        { value: '$50M+', label: 'Ad Spend Managed' },
+        { value: '5.0 ★', label: 'The Manifest Rating' },
+        { value: 'Top 20', label: 'Ranked by The Manifest' },
+        { value: '100%', label: 'Client Satisfaction' },
       ],
     }
   },
