@@ -24,7 +24,14 @@ export default Vue.extend({
   name: 'LogoBar',
   data() {
     return {
-      brands: ['CHVDJUSTIN', 'Euclid Church of Christ', 'The Manifest', 'Cleveland, OH'],
+      brands: [
+        'CHVDJUSTIN',
+        'Creative Living Care Group',
+        'J.R. Global Painting',
+        'Heavenly Sunshine 4 Life',
+        'MissionCoach AI by CJ',
+        'Euclid Church of Christ',
+      ],
     }
   },
 })
