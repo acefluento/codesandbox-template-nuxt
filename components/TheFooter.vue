@@ -4,13 +4,8 @@
       <div class="grid grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
         <!-- Brand col -->
         <div class="col-span-2 lg:col-span-2">
-          <a href="#" class="flex items-center gap-2 mb-4">
-            <div class="w-9 h-9 rounded-xl bg-gradient-cta flex items-center justify-center shadow-lg shadow-brand-blue/30">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
-            </div>
-            <span class="text-xl font-bold">Ace<span class="text-brand-blue">fluento</span></span>
+          <a href="#" class="flex items-center mb-4">
+            <img src="/ace-logo.svg" alt="Acefluento" class="h-10 w-auto" />
           </a>
           <p class="text-white/45 text-sm leading-relaxed max-w-xs mb-4">
             A modern digital marketing agency based in Cleveland, OH. Meta Ads, SEO, web development, and content strategy for brands ready to grow.

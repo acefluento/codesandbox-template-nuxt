@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 267" role="img" aria-label="Acefluento">
+  <!-- Black background -->
+  <rect width="400" height="267" rx="22" fill="#000000"/>
+
+  <!-- Red spade shape -->
+  <g transform="translate(105,133)">
+    <!-- Upper left lobe -->
+    <circle cx="-32" cy="-20" r="52" fill="#C41230"/>
+    <!-- Upper right lobe -->
+    <circle cx="32" cy="-20" r="52" fill="#C41230"/>
+    <!-- Center triangle pointing down -->
+    <polygon points="0,68 -68,0 68,0" fill="#C41230"/>
+    <!-- Stem -->
+    <rect x="-18" y="65" width="36" height="22" fill="#C41230"/>
+    <!-- Foot -->
+    <rect x="-36" y="84" width="72" height="14" rx="7" fill="#C41230"/>
+  </g>
+
+  <!-- White A inside spade -->
+  <text
+    x="105" y="165"
+    font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif"
+    font-weight="900"
+    font-size="108"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    dominant-baseline="auto"
+  >A</text>
+
+  <!-- White CE text -->
+  <text
+    x="280" y="175"
+    font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif"
+    font-weight="900"
+    font-size="128"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    dominant-baseline="auto"
+  >CE</text>
+</svg>
