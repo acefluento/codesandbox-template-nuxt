@@ -11,7 +11,7 @@
           Inside the <span class="gradient-text">Occupancy Growth System</span>
         </h2>
         <p class="text-white/55 text-lg max-w-2xl mx-auto">
-          Six digital levers we activate to move your occupancy needle — fast.
+          Six digital levers we activate to generate more tours and move-ins — fast.
           Not guesswork. Not generic marketing. A purpose-built system for care facilities.
         </p>
       </div>

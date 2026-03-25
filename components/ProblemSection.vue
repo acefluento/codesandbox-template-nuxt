@@ -67,7 +67,7 @@ export default Vue.extend({
         {
           icon: '🔍',
           title: 'Invisible to Searching Families',
-          body: 'When a family searches "assisted living near me," your facility isn\'t showing up. Your competitors are — and they\'re getting the inquiries.',
+          body: 'When a family searches "assisted living near me," your facility isn\'t showing up. Your competitors are — and they\'re getting the tour requests.',
         },
         {
           icon: '📞',

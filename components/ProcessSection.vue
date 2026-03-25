@@ -80,14 +80,14 @@ export default Vue.extend({
           icon: '🚀',
           title: 'Launch Campaigns',
           description:
-            'SEO, ads, website updates, and reputation systems go live. Local families start finding your facility.',
+            'SEO, ads, website updates, and reputation systems go live. Local families start finding your facility. Tour requests start flowing.',
           timeline: 'Days 11–21',
         },
         {
           icon: '🏠',
           title: 'Fill Rooms & Scale',
           description:
-            'We optimize weekly, track every inquiry back to its source, and scale what works until you hit target census.',
+            'We optimize weekly, track every tour request back to its source, and scale what works until you hit target census.',
           timeline: 'Day 22+',
         },
       ],

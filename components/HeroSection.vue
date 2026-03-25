@@ -14,24 +14,16 @@
       <div class="max-w-4xl mx-auto text-center">
 
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
           <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse-slow"></span>
           Assisted Living Occupancy Specialists
         </div>
 
-        <!-- Pain punch -->
-        <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-brand-blue/10 border border-brand-blue/20 text-brand-blue font-semibold text-lg mb-8">
-          <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-          </svg>
-          Every empty room is costing you $3,000–$6,000/month.
-        </div>
-
         <!-- Headline -->
         <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight mb-6">
-          We Help Assisted Living<br />Facilities
+          Fill Your
           <span class="relative inline-block">
-            <span class="gradient-text">Fill Empty Rooms</span>
+            <span class="gradient-text">Empty Rooms</span>
             <svg
               class="absolute -bottom-2 left-0 w-full"
               viewBox="0 0 300 12"
@@ -50,10 +42,19 @@
           <br />in 30–90 Days
         </h1>
 
-        <!-- Sub -->
-        <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-6 leading-relaxed">
-          Using a proven digital system designed to generate tours, not just traffic.
+        <!-- Subheadline -->
+        <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-7 leading-relaxed">
+          We help assisted living facilities generate consistent tours using a proven
+          digital system — not guesswork.
         </p>
+
+        <!-- Pain punch -->
+        <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-brand-blue/10 border border-brand-blue/20 text-brand-blue font-semibold text-base sm:text-lg mb-8">
+          <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+          </svg>
+          Every empty room is costing you $3,000–$6,000/month.
+        </div>
 
         <!-- Phone -->
         <div class="flex items-center justify-center gap-2 text-white/50 text-sm mb-10">
@@ -68,7 +69,7 @@
         <!-- CTA Group -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <a href="#contact" class="btn-orange text-base gap-2 group">
-            Find Out What's Costing You Residents
+            Get Your Free Occupancy Audit
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -87,21 +88,21 @@
             <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
+            Free audit, no obligation
+          </div>
+          <div class="w-px h-4 bg-white/15 hidden sm:block"></div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
             No long-term contracts
           </div>
           <div class="w-px h-4 bg-white/15 hidden sm:block"></div>
           <div class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
             </svg>
-            First results in 30 days
-          </div>
-          <div class="w-px h-4 bg-white/15 hidden sm:block"></div>
-          <div class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-            </svg>
-            Assisted living specialists only
+            Limited onboarding slots each month
           </div>
         </div>
       </div>
