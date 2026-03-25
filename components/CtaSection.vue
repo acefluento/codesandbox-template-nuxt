@@ -5,16 +5,17 @@
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(#C41230 1px, transparent 1px), linear-gradient(90deg, #C41230 1px, transparent 1px); background-size: 64px 64px; opacity: 0.03;"></div>
 
     <div class="relative max-w-4xl mx-auto px-6 text-center">
-      <span class="section-label mb-6 inline-flex">Free Occupancy Audit</span>
+      <span class="section-label mb-6 inline-flex">Stop Losing Residents to Competitors</span>
 
       <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
-        Ready to Fill<br />
-        <span class="gradient-text">More Rooms?</span>
+        Stop Letting Rooms<br />
+        <span class="gradient-text">Sit Empty</span>
       </h2>
 
       <p class="text-white/60 text-lg max-w-xl mx-auto mb-10">
-        Book a free 30-minute occupancy audit. We'll review your digital presence,
-        identify the gaps, and show you exactly how to increase census — at no cost.
+        Book your free occupancy audit. We'll show you exactly what's broken,
+        what competitors are doing that you're not, and how to fix it —
+        in 30 minutes, at no cost.
       </p>
 
       <!-- Calendly Inline Widget -->
@@ -59,7 +60,7 @@
         <span class="w-px h-4 bg-white/15"></span>
         <span>30-min call</span>
         <span class="w-px h-4 bg-white/15"></span>
-        <span>Care facilities only</span>
+        <span>We'll show you exactly what's broken</span>
       </div>
     </div>
   </section>

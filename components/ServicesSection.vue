@@ -6,7 +6,7 @@
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div class="text-center mb-16">
-        <span class="section-label mb-4">The System</span>
+        <span class="section-label mb-4">What We Activate</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Inside the <span class="gradient-text">Occupancy Growth System</span>
         </h2>
@@ -29,7 +29,7 @@
           >
             <span class="text-2xl">{{ service.icon }}</span>
           </div>
-          <h3 class="text-xl font-bold mb-3">{{ service.title }}</h3>
+          <h3 class="text-lg font-bold mb-3 leading-snug">{{ service.title }}</h3>
           <p class="text-white/55 text-sm leading-relaxed mb-5">{{ service.description }}</p>
           <ul class="space-y-2">
             <li
@@ -58,7 +58,7 @@ export default Vue.extend({
         {
           icon: '🗺️',
           iconBg: 'bg-brand-blue/15',
-          title: 'Local SEO & Google Business',
+          title: "Show Up When Families Search 'Assisted Living Near Me'",
           description:
             'Be the first facility families find when they search nearby. We put you at the top of local results where decisions are made.',
           points: [
@@ -71,7 +71,7 @@ export default Vue.extend({
         {
           icon: '🎯',
           iconBg: 'bg-purple-500/15',
-          title: 'Targeted Digital Ads',
+          title: 'Reach Families Actively Researching Care Options Right Now',
           description:
             'Reach families actively researching care options right now — on Facebook, Instagram, and Google — with precise demographic targeting.',
           points: [
@@ -84,9 +84,9 @@ export default Vue.extend({
         {
           icon: '🌐',
           iconBg: 'bg-green-500/15',
-          title: 'Website Conversion',
+          title: 'Turn Website Visitors Into Inquiry Calls and Tour Bookings',
           description:
-            'Turn website visitors into inquiry calls and tour bookings. A beautiful site means nothing if it doesn\'t convert.',
+            "Turn website visitors into inquiry calls and tour bookings. A beautiful site means nothing if it doesn't convert.",
           points: [
             'CRO-focused redesign',
             'Clear CTAs & inquiry forms',
@@ -97,7 +97,7 @@ export default Vue.extend({
         {
           icon: '⭐',
           iconBg: 'bg-orange-500/15',
-          title: 'Reputation Management',
+          title: 'Build the Trust That Converts Families to Residents',
           description:
             'Build the online trust that converts families from curious to committed. Reviews are the #1 factor in care facility selection.',
           points: [
@@ -110,7 +110,7 @@ export default Vue.extend({
         {
           icon: '📖',
           iconBg: 'bg-cyan-500/15',
-          title: 'Content & Trust-Building',
+          title: 'Educate Families, Build Authority, Earn the Call',
           description:
             'Educate families, demonstrate care quality, and build the authority that makes choosing your facility an easy decision.',
           points: [
@@ -123,9 +123,9 @@ export default Vue.extend({
         {
           icon: '📊',
           iconBg: 'bg-pink-500/15',
-          title: 'Tracking & Reporting',
+          title: "Know Exactly What's Filling Rooms — and What's Not",
           description:
-            'Know exactly which channels are filling rooms and which aren\'t. Full transparency, monthly occupancy reports, no fluff.',
+            "Know exactly which channels are filling rooms and which aren't. Full transparency, monthly occupancy reports, no fluff.",
           points: [
             'Call & inquiry tracking',
             'Lead source attribution',

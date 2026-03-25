@@ -5,6 +5,7 @@
     <ProblemSection />
     <ServicesSection />
     <ResultsSection />
+    <WhyUsSection />
     <ProcessSection />
     <TestimonialsSection />
   </main>

@@ -27,6 +27,9 @@
           <!-- Top accent -->
           <div class="h-1 w-full" :class="study.accentColor"></div>
           <div class="p-8">
+            <!-- Win badge -->
+            <div class="text-green-400 font-black text-xl mb-5">{{ study.win }}</div>
+
             <!-- Brand + niche -->
             <div class="flex items-center justify-between mb-6">
               <div>
@@ -98,9 +101,10 @@ export default Vue.extend({
           tag: 'Healthcare',
           tagClass: 'bg-teal-500/15 text-teal-400',
           accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
+          win: '→ Zero to Full Digital Presence',
           metrics: [
-            { label: 'Before', value: 'Zero Online Presence', green: false },
-            { label: 'Digital Footprint', value: 'Zero → Full', green: true },
+            { label: 'Starting Point', value: 'Invisible Online', green: false },
+            { label: 'Digital Presence', value: 'Built From Zero', green: true },
             { label: 'Google Business', value: 'Optimized', green: true },
             { label: 'Local Search', value: 'Indexed & Ranking', green: true },
           ],
@@ -112,6 +116,7 @@ export default Vue.extend({
           tag: 'eComm',
           tagClass: 'bg-purple-500/15 text-purple-400',
           accentColor: 'bg-gradient-to-r from-purple-500 to-pink-500',
+          win: '→ Active Campaigns + Growing Audience',
           metrics: [
             { label: 'Services', value: 'Meta Ads + SEO', green: false },
             { label: 'FB Campaigns', value: 'Active & Scaling', green: true },
@@ -126,13 +131,14 @@ export default Vue.extend({
           tag: 'Non-Profit',
           tagClass: 'bg-brand-blue/15 text-brand-blue',
           accentColor: 'bg-gradient-to-r from-brand-blue to-cyan-400',
+          win: '→ YouTube Live + Expanded Reach',
           metrics: [
             { label: 'Services', value: 'Social + YouTube', green: false },
             { label: 'YouTube Campaign', value: 'Live', green: true },
             { label: 'Subscriber Strategy', value: 'Deployed', green: true },
             { label: 'Community Reach', value: 'Expanded', green: true },
           ],
-          quote: 'Acefluento helped us build a real digital presence and grow our congregation\'s online community effectively.',
+          quote: "Acefluento helped us build a real digital presence and grow our congregation's online community effectively.",
         },
       ],
       globalStats: [
