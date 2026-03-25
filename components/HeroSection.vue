@@ -2,13 +2,8 @@
   <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
     <!-- Background gradient blobs -->
     <div class="absolute inset-0 pointer-events-none">
-      <div
-        class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-brand-blue/8 rounded-full blur-3xl"
-      ></div>
-      <div
-        class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/6 rounded-full blur-3xl"
-      ></div>
-      <!-- Grid overlay -->
+      <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-brand-blue/8 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/6 rounded-full blur-3xl"></div>
       <div
         class="absolute inset-0 opacity-[0.03]"
         style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"
@@ -20,14 +15,15 @@
         <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
           <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse-slow"></span>
-          Digital Marketing Agency · Cleveland, OH · Est. 2022
+          Now Serving Assisted Living Facilities
         </div>
 
         <!-- Headline -->
         <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight mb-6">
-          Turn Cold Traffic Into
+          We Help Assisted Living<br />
+          Facilities
           <span class="relative inline-block">
-            <span class="gradient-text">Paying Customers</span>
+            <span class="gradient-text">Increase Occupancy</span>
             <svg
               class="absolute -bottom-2 left-0 w-full"
               viewBox="0 0 300 12"
@@ -36,35 +32,34 @@
             >
               <path
                 d="M2 9C50 4 100 2 150 5C200 8 250 10 298 7"
-                stroke="#1877F2"
+                stroke="#C41230"
                 stroke-width="3"
                 stroke-linecap="round"
                 opacity="0.6"
               />
             </svg>
           </span>
-          <br />with Meta Ads
         </h1>
 
         <!-- Sub -->
         <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-          We build and scale Meta Ad systems that fill your pipeline — not just your feed.
-          Data-backed creative, laser-targeted audiences, and relentless optimization.
+          Using digital systems. Fill more rooms in 30–90 days with a proven strategy
+          built specifically for care facilities — not generic marketing.
         </p>
 
         <!-- CTA Group -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <a href="#contact" class="btn-orange text-base gap-2 group">
-            Book Free Strategy Call
+            Book Free Occupancy Audit
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-          <a href="#results" class="btn-secondary text-base gap-2">
+          <a href="/occupancy-growth-system" class="btn-secondary text-base gap-2">
             <svg class="w-5 h-5 text-brand-blue" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
-            See Client Results
+            See Our System
           </a>
         </div>
 
@@ -81,14 +76,14 @@
             <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
-            Results in 30 days or refund
+            Results in 30–90 days
           </div>
           <div class="w-px h-4 bg-white/15 hidden sm:block"></div>
           <div class="flex items-center gap-2">
             <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
-            Dedicated account manager
+            Care-industry specialists
           </div>
         </div>
       </div>
@@ -117,9 +112,9 @@ export default Vue.extend({
   data() {
     return {
       metrics: [
-        { value: '5.0 ★', label: 'The Manifest Rating' },
-        { value: 'Top 20', label: 'Ranked by The Manifest' },
-        { value: '100%', label: 'Client Satisfaction' },
+        { value: '6+', label: 'Facilities & Orgs Served' },
+        { value: '30–90', label: 'Days to Results' },
+        { value: '5.0 ★', label: 'Manifest Rating' },
       ],
     }
   },

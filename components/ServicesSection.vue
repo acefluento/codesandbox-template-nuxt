@@ -6,23 +6,23 @@
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div class="text-center mb-16">
-        <span class="section-label mb-4">What We Do</span>
+        <span class="section-label mb-4">The System</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Full-Stack <span class="gradient-text">Meta Advertising</span>
+          Inside the <span class="gradient-text">Occupancy Growth System</span>
         </h2>
         <p class="text-white/55 text-lg max-w-2xl mx-auto">
-          From creative ideation to conversion optimization — we handle everything so you can focus on fulfillment.
+          Six digital levers we activate to move your occupancy needle — fast.
+          Not guesswork. Not generic marketing. A purpose-built system for care facilities.
         </p>
       </div>
 
-      <!-- Services Grid -->
+      <!-- Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="service in services"
           :key="service.title"
           class="card-dark group cursor-default"
         >
-          <!-- Icon -->
           <div
             class="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
             :class="service.iconBg"
@@ -56,81 +56,81 @@ export default Vue.extend({
     return {
       services: [
         {
-          icon: '🎯',
+          icon: '🗺️',
           iconBg: 'bg-brand-blue/15',
-          title: 'Meta Ads Management',
+          title: 'Local SEO & Google Business',
           description:
-            'End-to-end campaign management on Facebook & Instagram. We build, test, and scale what works.',
+            'Be the first facility families find when they search nearby. We put you at the top of local results where decisions are made.',
           points: [
-            'Campaign architecture & structure',
-            'Audience targeting & segmentation',
-            'Bid strategy & budget optimization',
-            'A/B testing & iteration',
+            'Google Business Profile optimization',
+            'Local keyword targeting',
+            'Map pack ranking',
+            'Review management setup',
           ],
         },
         {
-          icon: '🎨',
+          icon: '🎯',
           iconBg: 'bg-purple-500/15',
-          title: 'Creative Strategy',
+          title: 'Targeted Digital Ads',
           description:
-            'Scroll-stopping ads designed to hook cold audiences and drive action at every funnel stage.',
+            'Reach families actively researching care options right now — on Facebook, Instagram, and Google — with precise demographic targeting.',
           points: [
-            'UGC & native-style video ads',
-            'Static image ad design',
-            'Ad copy & hooks',
-            'Creative performance analysis',
+            'Facebook & Instagram campaigns',
+            'Google search ads',
+            'Adult-child caregiver targeting',
+            'Budget optimization & ROAS',
+          ],
+        },
+        {
+          icon: '🌐',
+          iconBg: 'bg-green-500/15',
+          title: 'Website Conversion',
+          description:
+            'Turn website visitors into inquiry calls and tour bookings. A beautiful site means nothing if it doesn\'t convert.',
+          points: [
+            'CRO-focused redesign',
+            'Clear CTAs & inquiry forms',
+            'Mobile-first optimization',
+            'Fast load speeds',
+          ],
+        },
+        {
+          icon: '⭐',
+          iconBg: 'bg-orange-500/15',
+          title: 'Reputation Management',
+          description:
+            'Build the online trust that converts families from curious to committed. Reviews are the #1 factor in care facility selection.',
+          points: [
+            'Google review generation',
+            'Response strategy',
+            'Reputation monitoring',
+            'Trust signal placement',
+          ],
+        },
+        {
+          icon: '📖',
+          iconBg: 'bg-cyan-500/15',
+          title: 'Content & Trust-Building',
+          description:
+            'Educate families, demonstrate care quality, and build the authority that makes choosing your facility an easy decision.',
+          points: [
+            'Blog & FAQ content',
+            'Video testimonials',
+            'Photo & virtual tours',
+            'Social proof systems',
           ],
         },
         {
           icon: '📊',
-          iconBg: 'bg-green-500/15',
-          title: 'Funnel & Landing Pages',
-          description:
-            'High-converting landing pages and funnels that turn ad clicks into revenue — not just visits.',
-          points: [
-            'CRO-optimized page design',
-            'VSL & webinar funnels',
-            'Lead gen & quiz funnels',
-            'Post-click optimization',
-          ],
-        },
-        {
-          icon: '🔁',
-          iconBg: 'bg-orange-500/15',
-          title: 'Retargeting Systems',
-          description:
-            'Re-engage warm audiences with precision retargeting sequences that close the deal automatically.',
-          points: [
-            'Pixel & CAPI setup',
-            'Dynamic product ads',
-            'Abandoned cart sequences',
-            'Cross-sell & upsell flows',
-          ],
-        },
-        {
-          icon: '📈',
-          iconBg: 'bg-cyan-500/15',
-          title: 'Analytics & Reporting',
-          description:
-            'Clear, actionable reporting so you always know exactly where your money goes and what it returns.',
-          points: [
-            'Custom dashboard setup',
-            'Attribution modeling',
-            'Weekly performance reports',
-            'Profit & ROAS tracking',
-          ],
-        },
-        {
-          icon: '🚀',
           iconBg: 'bg-pink-500/15',
-          title: 'Growth Scaling',
+          title: 'Tracking & Reporting',
           description:
-            'Once we find the winning formula, we pour fuel on the fire — responsibly scaling ad spend for maximum return.',
+            'Know exactly which channels are filling rooms and which aren\'t. Full transparency, monthly occupancy reports, no fluff.',
           points: [
-            'Horizontal & vertical scaling',
-            'Lookalike audience expansion',
-            'International market entry',
-            'Offer testing & optimization',
+            'Call & inquiry tracking',
+            'Lead source attribution',
+            'Monthly occupancy reports',
+            'ROI transparency',
           ],
         },
       ],

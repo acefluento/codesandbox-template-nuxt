@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Acefluento — Meta Ads & Digital Marketing Agency',
+    title: 'Acefluento — Occupancy Growth for Assisted Living Facilities',
     htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
@@ -11,13 +11,13 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Acefluento LLC — Cleveland, OH digital marketing agency. Meta Ads, SEO, web development, and content marketing. Turn cold traffic into loyal customers. Call 216-808-3109.',
+          'Acefluento LLC — We help assisted living facilities increase occupancy using digital systems. Fill more rooms in 30–90 days. Cleveland, OH. Call 216-808-3109.',
       },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: 'og:title', content: 'Acefluento — Meta Ads & Digital Marketing Agency' },
+      { property: 'og:title', content: 'Acefluento — Occupancy Growth for Assisted Living Facilities' },
       {
         property: 'og:description',
-        content: 'Scale your brand with Meta Ads that actually convert. Book a free strategy call today.',
+        content: 'Fill more rooms in 30–90 days with a digital system built for care facilities. Book a free occupancy audit today.',
       },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary_large_image' },

@@ -2,26 +2,26 @@
   <section id="contact" class="py-28 relative overflow-hidden">
     <!-- BG -->
     <div class="absolute inset-0 bg-gradient-to-br from-brand-blue/10 via-transparent to-purple-600/8 pointer-events-none"></div>
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(#1877F2 1px, transparent 1px), linear-gradient(90deg, #1877F2 1px, transparent 1px); background-size: 64px 64px; opacity: 0.03;"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(#C41230 1px, transparent 1px), linear-gradient(90deg, #C41230 1px, transparent 1px); background-size: 64px 64px; opacity: 0.03;"></div>
 
     <div class="relative max-w-4xl mx-auto px-6 text-center">
-      <span class="section-label mb-6 inline-flex">Free Strategy Call</span>
+      <span class="section-label mb-6 inline-flex">Free Occupancy Audit</span>
 
       <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
-        Ready to Stop Guessing<br />
-        and Start <span class="gradient-text">Scaling?</span>
+        Ready to Fill<br />
+        <span class="gradient-text">More Rooms?</span>
       </h2>
 
       <p class="text-white/60 text-lg max-w-xl mx-auto mb-10">
-        Book a free 30-minute strategy call. We'll audit your current ads, identify the biggest growth
-        opportunities, and show you exactly how we'd scale your brand.
+        Book a free 30-minute occupancy audit. We'll review your digital presence,
+        identify the gaps, and show you exactly how to increase census — at no cost.
       </p>
 
       <!-- Calendly Inline Widget -->
       <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-xl shadow-brand-blue/10">
         <div
           class="calendly-inline-widget"
-          data-url="https://calendly.com/acefluento/growth-strategy-call-with-nolan?hide_event_type_details=0&hide_gdpr_banner=1&background_color=111118&text_color=ffffff&primary_color=1877F2"
+          data-url="https://calendly.com/acefluento/growth-strategy-call-with-nolan?hide_event_type_details=0&hide_gdpr_banner=1&background_color=111118&text_color=ffffff&primary_color=C41230"
           style="min-width:320px;height:700px;"
         ></div>
       </div>
@@ -59,7 +59,7 @@
         <span class="w-px h-4 bg-white/15"></span>
         <span>30-min call</span>
         <span class="w-px h-4 bg-white/15"></span>
-        <span>Response within 24hrs</span>
+        <span>Care facilities only</span>
       </div>
     </div>
   </section>

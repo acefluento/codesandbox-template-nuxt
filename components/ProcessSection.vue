@@ -4,10 +4,11 @@
       <div class="text-center mb-16">
         <span class="section-label mb-4">How It Works</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          From Zero to <span class="gradient-text">Scaling in 30 Days</span>
+          How the <span class="gradient-text">Occupancy Growth System</span> Works
         </h2>
         <p class="text-white/55 text-lg max-w-xl mx-auto">
-          A proven process refined across 200+ brands. Clear milestones, no surprises.
+          A clear, tested 4-step process. From audit to rooms filled in 30–90 days.
+          Clear milestones. No surprises.
         </p>
       </div>
 
@@ -33,7 +34,6 @@
             <h3 class="text-lg font-bold mb-3">{{ step.title }}</h3>
             <p class="text-white/50 text-sm leading-relaxed">{{ step.description }}</p>
 
-            <!-- Timeline badge -->
             <span class="mt-4 px-3 py-1 rounded-full bg-white/6 text-white/40 text-xs font-medium">
               {{ step.timeline }}
             </span>
@@ -44,7 +44,7 @@
       <!-- CTA under process -->
       <div class="text-center mt-16">
         <a href="#contact" class="btn-primary gap-2 group">
-          Start Your 30-Day Growth Sprint
+          Book Free Occupancy Audit
           <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -64,30 +64,30 @@ export default Vue.extend({
       steps: [
         {
           icon: '🔍',
-          title: 'Discovery & Audit',
+          title: 'Free Occupancy Audit',
           description:
-            'We dig into your funnel, current ads, offer, and competition to identify the biggest growth levers.',
+            'We assess your current digital footprint, local visibility, and occupancy gap to identify your fastest growth levers.',
           timeline: 'Days 1–3',
         },
         {
           icon: '🗺️',
           title: 'Strategy & Build',
           description:
-            'Custom campaign architecture, creative brief, audience map, and full funnel built for your offer.',
+            'A custom digital strategy built around your facility\'s market, competitors, and available rooms — nothing generic.',
           timeline: 'Days 4–10',
         },
         {
           icon: '🚀',
-          title: 'Launch & Test',
+          title: 'Launch Campaigns',
           description:
-            'We go live with rapid testing across creatives, audiences, and angles to find winning combinations fast.',
+            'SEO, ads, website updates, and reputation systems go live. Local families start finding your facility.',
           timeline: 'Days 11–21',
         },
         {
-          icon: '📈',
-          title: 'Optimize & Scale',
+          icon: '🏠',
+          title: 'Fill Rooms & Scale',
           description:
-            'Winners get scaled, losers get cut. We compound your results week over week with data-driven decisions.',
+            'We optimize weekly, track every inquiry back to its source, and scale what works until you hit target census.',
           timeline: 'Day 22+',
         },
       ],

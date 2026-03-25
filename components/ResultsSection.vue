@@ -8,10 +8,11 @@
       <div class="text-center mb-16">
         <span class="section-label mb-4">Client Results</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Real Numbers. <span class="gradient-text">Real Businesses.</span>
+          Real Facilities. <span class="gradient-text">Real Results.</span>
         </h2>
         <p class="text-white/55 text-lg max-w-2xl mx-auto">
-          Real clients. Real campaigns. Real results — right here in Cleveland and beyond.
+          We built a digital system for an assisted living facility with zero online presence.
+          Here's what happened — and how we're doing it again.
         </p>
       </div>
 
@@ -21,7 +22,7 @@
           v-for="(study, i) in caseStudies"
           :key="study.brand"
           class="relative bg-brand-dark-3 border border-white/8 rounded-2xl overflow-hidden group hover:border-brand-blue/30 transition-all duration-300"
-          :class="i === 1 ? 'lg:scale-105 border-brand-blue/30 shadow-xl shadow-brand-blue/10' : ''"
+          :class="i === 0 ? 'lg:scale-105 border-brand-blue/30 shadow-xl shadow-brand-blue/10' : ''"
         >
           <!-- Top accent -->
           <div class="h-1 w-full" :class="study.accentColor"></div>
@@ -69,6 +70,16 @@
           <div class="text-white/50 text-sm">{{ stat.label }}</div>
         </div>
       </div>
+
+      <!-- Link to case studies -->
+      <div class="text-center mt-10">
+        <a href="/case-studies" class="inline-flex items-center gap-2 text-brand-blue hover:text-white transition-colors font-semibold group">
+          See all case studies
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -82,9 +93,23 @@ export default Vue.extend({
     return {
       caseStudies: [
         {
+          brand: 'Creative Living Care Group Inc.',
+          niche: 'Assisted Living · Clearwater, FL',
+          tag: 'Healthcare',
+          tagClass: 'bg-teal-500/15 text-teal-400',
+          accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
+          metrics: [
+            { label: 'Before', value: 'Zero Online Presence', green: false },
+            { label: 'Digital Footprint', value: 'Zero → Full', green: true },
+            { label: 'Google Business', value: 'Optimized', green: true },
+            { label: 'Local Search', value: 'Indexed & Ranking', green: true },
+          ],
+          quote: 'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our assisted living brand.',
+        },
+        {
           brand: 'CHVDJUSTIN (Wearpack)',
           niche: 'Fashion Tech · eCommerce',
-          tag: 'Fashion',
+          tag: 'eComm',
           tagClass: 'bg-purple-500/15 text-purple-400',
           accentColor: 'bg-gradient-to-r from-purple-500 to-pink-500',
           metrics: [
@@ -94,20 +119,6 @@ export default Vue.extend({
             { label: 'Product Launches', value: 'Successful', green: true },
           ],
           quote: 'Acefluento LLC has offered my brand Chvd Justin amazing services, helping us establish our SEO and grow our digital audience.',
-        },
-        {
-          brand: 'Creative Living Care Group Inc.',
-          niche: 'Healthcare · Assisted Living · Clearwater, FL',
-          tag: 'Healthcare',
-          tagClass: 'bg-teal-500/15 text-teal-400',
-          accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
-          metrics: [
-            { label: 'Services', value: 'Web Design + Local SEO', green: false },
-            { label: 'Digital Footprint', value: 'Zero → Full', green: true },
-            { label: 'Google Business', value: 'Optimized', green: true },
-            { label: 'Local Search', value: 'Indexed & Ranking', green: true },
-          ],
-          quote: 'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our assisted living brand.',
         },
         {
           brand: 'Euclid Church of Christ',
@@ -125,9 +136,9 @@ export default Vue.extend({
         },
       ],
       globalStats: [
-        { value: '6+', label: 'Brands & Orgs Served', color: 'text-white' },
+        { value: '6+', label: 'Facilities & Brands Served', color: 'text-white' },
         { value: '5.0 ★', label: 'The Manifest Rating', color: 'text-green-400' },
-        { value: 'Top 20', label: 'Event Marketing (The Manifest)', color: 'text-brand-blue' },
+        { value: '30–90', label: 'Days to Results', color: 'text-brand-blue' },
         { value: '100%', label: 'Client Satisfaction', color: 'text-orange-400' },
       ],
     }

@@ -7,7 +7,7 @@
   >
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="flex items-center">
+      <a href="/" class="flex items-center">
         <img src="/ace-logo.svg" alt="Acefluento" class="h-10 w-auto" />
       </a>
 
@@ -25,7 +25,7 @@
 
       <!-- CTA -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="#contact" class="btn-primary text-sm px-6 py-3"> Book Free Call </a>
+        <a href="/#contact" class="btn-primary text-sm px-6 py-3">Book Free Audit</a>
       </div>
 
       <!-- Mobile menu toggle -->
@@ -57,7 +57,7 @@
       >
         {{ link.label }}
       </a>
-      <a href="#contact" class="btn-primary text-sm mt-2" @click="mobileOpen = false"> Book Free Strategy Call </a>
+      <a href="/#contact" class="btn-primary text-sm mt-2" @click="mobileOpen = false">Book Free Occupancy Audit</a>
     </div>
   </nav>
 </template>
@@ -72,11 +72,9 @@ export default Vue.extend({
       scrolled: false,
       mobileOpen: false,
       navLinks: [
-        { label: 'Services', href: '#services' },
-        { label: 'Results', href: '#results' },
-        { label: 'Process', href: '#process' },
-        { label: 'Testimonials', href: '#testimonials' },
-        { label: 'Pricing', href: '#pricing' },
+        { label: 'Occupancy System', href: '/occupancy-growth-system' },
+        { label: 'Case Studies', href: '/case-studies' },
+        { label: 'Services', href: '/services' },
       ],
     }
   },
