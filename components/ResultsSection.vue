@@ -101,7 +101,7 @@ export default Vue.extend({
           tag: 'Healthcare',
           tagClass: 'bg-teal-500/15 text-teal-400',
           accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
-          win: '→ Zero to Full Digital Presence',
+          win: '→ Zero to Full Digital Presence · Tour Pipeline Active',
           metrics: [
             { label: 'Starting Point', value: 'Invisible Online', green: false },
             { label: 'Digital Presence', value: 'Built From Zero', green: true },

@@ -43,9 +43,14 @@
         </h1>
 
         <!-- Subheadline -->
-        <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-7 leading-relaxed">
+        <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-5 leading-relaxed">
           We help assisted living facilities generate consistent tours using a proven
           digital system — not guesswork.
+        </p>
+
+        <!-- Belief shift -->
+        <p class="text-white/45 text-base mb-7">
+          Most facilities aren't struggling with care — they're struggling to be found.
         </p>
 
         <!-- Pain punch -->

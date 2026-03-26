@@ -8,7 +8,7 @@
             <img src="/ace-logo.svg" alt="Acefluento" class="h-10 w-auto" />
           </a>
           <p class="text-white/45 text-sm leading-relaxed max-w-xs mb-4">
-            A modern digital marketing agency based in Cleveland, OH. Meta Ads, SEO, web development, and content strategy for brands ready to grow.
+            We help assisted living facilities fill empty rooms using a proven digital system — SEO, ads, and reputation management built around one outcome: more tour requests and move-ins.
           </p>
           <!-- Contact info -->
           <div class="space-y-2 mb-5">

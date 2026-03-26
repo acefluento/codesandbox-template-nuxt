@@ -8,8 +8,8 @@
       <div class="text-center mb-16">
         <span class="section-label mb-4">Why It Works</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Why This Works<br />
-          <span class="gradient-text">When Others Don't</span>
+          Why This Isn't<br />
+          <span class="gradient-text">Just Another Agency</span>
         </h2>
       </div>
 
