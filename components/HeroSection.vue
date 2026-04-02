@@ -24,7 +24,7 @@
           <!-- Headline -->
           <h1 class="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
             Websites and lead<br />
-            systems for<br /><span class="gradient-text">trust-based local brands</span>
+            systems for<br /><span style="background: linear-gradient(to right, #ffffff, #cbd5e1, #2563EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block;">trust-based local brands</span>
           </h1>
 
           <!-- Subheadline -->
