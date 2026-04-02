@@ -33,8 +33,16 @@ export default {
       { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' },
     ],
     script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-4MQGGBPE9B', async: true },
+      {
+        innerHTML: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4MQGGBPE9B');`,
+      },
       { src: 'https://assets.calendly.com/assets/external/widget.js', defer: true },
     ],
+    __dangerouslyDisableSanitizersByTagID: { gtag: ['innerHTML'] },
   },
 
   css: ['~/assets/css/main.css'],
