@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" width="220" height="140">
+  <!-- Black rounded rect background -->
+  <rect width="220" height="140" rx="14" ry="14" fill="#111111"/>
+
+  <!-- Spade shape (red) -->
+  <!-- Spade top bulb left -->
+  <path d="M72 95
+    C72 95 30 72 30 48
+    C30 28 50 22 65 35
+    C58 18 68 8 80 8
+    C92 8 102 18 95 35
+    C110 22 130 28 130 48
+    C130 72 88 95 88 95
+    L84 95
+    C86 105 94 110 104 112
+    L56 112
+    C66 110 74 105 76 95
+    Z"
+    fill="#CC1A2E"/>
+
+  <!-- White A letter inside spade -->
+  <text x="80" y="88" font-family="Arial Black, Arial" font-weight="900" font-size="68" fill="white" text-anchor="middle" dominant-baseline="auto">A</text>
+
+  <!-- White CE text -->
+  <text x="155" y="95" font-family="Arial Black, Arial" font-weight="900" font-size="72" fill="white" text-anchor="middle" dominant-baseline="auto">CE</text>
+</svg>
