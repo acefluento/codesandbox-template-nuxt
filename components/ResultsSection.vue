@@ -1,72 +1,54 @@
 <template>
-  <section id="results" class="py-28 bg-brand-dark-2 relative overflow-hidden">
+  <section id="work" class="py-28 bg-brand-navy-2 relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-64 bg-brand-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-48 bg-brand-blue/5 rounded-full blur-3xl"></div>
     </div>
+
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div class="text-center mb-16">
-        <span class="section-label mb-4">Client Results</span>
+        <span class="section-label mb-4">Selected work</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Real Numbers. <span class="gradient-text">Real Businesses.</span>
+          Built around the business model,<br /><span class="gradient-text">not a template</span>
         </h2>
         <p class="text-white/55 text-lg max-w-2xl mx-auto">
-          Real clients. Real campaigns. Real results — right here in Cleveland and beyond.
+          Acefluento adapts the system to the audience, offer, and buying journey.
         </p>
       </div>
 
       <!-- Case Study Cards -->
-      <div class="grid lg:grid-cols-3 gap-6 mb-16">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
         <div
-          v-for="(study, i) in caseStudies"
+          v-for="study in caseStudies"
           :key="study.brand"
-          class="relative bg-brand-dark-3 border border-white/8 rounded-2xl overflow-hidden group hover:border-brand-blue/30 transition-all duration-300"
-          :class="i === 1 ? 'lg:scale-105 border-brand-blue/30 shadow-xl shadow-brand-blue/10' : ''"
+          class="relative bg-brand-navy border border-white/[0.08] rounded-2xl overflow-hidden group hover:border-brand-blue/25 hover:-translate-y-1 transition-all duration-300"
         >
           <!-- Top accent -->
-          <div class="h-1 w-full" :class="study.accentColor"></div>
-          <div class="p-8">
-            <!-- Brand + niche -->
-            <div class="flex items-center justify-between mb-6">
-              <div>
-                <div class="font-bold text-lg">{{ study.brand }}</div>
-                <div class="text-white/40 text-sm">{{ study.niche }}</div>
-              </div>
-              <span
-                class="px-3 py-1 rounded-full text-xs font-semibold"
-                :class="study.tagClass"
-              >{{ study.tag }}</span>
-            </div>
+          <div class="h-1 w-full bg-gradient-to-r" :class="study.accentClass"></div>
 
-            <!-- Metrics -->
-            <div class="space-y-4 mb-6">
-              <div
-                v-for="metric in study.metrics"
-                :key="metric.label"
-                class="flex items-center justify-between py-3 border-b border-white/6 last:border-0"
-              >
-                <span class="text-white/50 text-sm">{{ metric.label }}</span>
-                <span class="font-bold text-lg" :class="metric.green ? 'text-green-400' : 'text-white'">
-                  {{ metric.value }}
-                </span>
-              </div>
-            </div>
+          <div class="p-6">
+            <!-- Tag -->
+            <span
+              class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold mb-4"
+              :class="study.tagColor"
+            >{{ study.tag }}</span>
 
-            <!-- Quote -->
-            <p class="text-white/45 text-sm italic leading-relaxed">"{{ study.quote }}"</p>
+            <!-- Brand + industry -->
+            <h3 class="font-bold text-base mb-1">{{ study.brand }}</h3>
+            <p class="text-white/35 text-xs mb-4">{{ study.industry }}</p>
+
+            <!-- Focus -->
+            <p class="text-white/55 text-xs font-medium uppercase tracking-wide mb-2">Focus</p>
+            <p class="text-white/70 text-sm mb-4 leading-relaxed">{{ study.focus }}</p>
+
+            <!-- Summary -->
+            <p class="text-white/40 text-xs leading-relaxed">{{ study.summary }}</p>
+
+            <!-- Quote if available -->
+            <p v-if="study.quote" class="mt-4 text-white/35 text-xs italic leading-relaxed border-t border-white/[0.06] pt-4">
+              "{{ study.quote }}"
+            </p>
           </div>
-        </div>
-      </div>
-
-      <!-- Big stat bar -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/8 rounded-2xl overflow-hidden">
-        <div
-          v-for="stat in globalStats"
-          :key="stat.label"
-          class="bg-brand-dark-3 px-8 py-8 text-center"
-        >
-          <div class="text-4xl font-black mb-2" :class="stat.color">{{ stat.value }}</div>
-          <div class="text-white/50 text-sm">{{ stat.label }}</div>
         </div>
       </div>
     </div>
@@ -82,53 +64,49 @@ export default Vue.extend({
     return {
       caseStudies: [
         {
-          brand: 'CHVDJUSTIN (Wearpack)',
-          niche: 'Fashion Tech · eCommerce',
-          tag: 'Fashion',
-          tagClass: 'bg-purple-500/15 text-purple-400',
-          accentColor: 'bg-gradient-to-r from-purple-500 to-pink-500',
-          metrics: [
-            { label: 'Services', value: 'Meta Ads + SEO', green: false },
-            { label: 'FB Campaigns', value: 'Active & Scaling', green: true },
-            { label: 'Website SEO', value: 'Fully Optimized', green: true },
-            { label: 'Product Launches', value: 'Successful', green: true },
-          ],
-          quote: 'Acefluento LLC has offered my brand Chvd Justin amazing services, helping us establish our SEO and grow our digital audience.',
+          brand: 'JR Global',
+          industry: 'Painting / Local Service',
+          focus: 'Local lead generation + trust-building web presence',
+          summary:
+            'Built a cleaner digital presence designed to support local visibility, legitimacy, and quote intent.',
+          tag: 'Local Service',
+          tagColor: 'bg-brand-emerald/15 text-brand-emerald',
+          accentClass: 'from-brand-emerald to-teal-400',
         },
         {
-          brand: 'Creative Living Care Group Inc.',
-          niche: 'Healthcare · Assisted Living · Clearwater, FL',
-          tag: 'Healthcare',
-          tagClass: 'bg-teal-500/15 text-teal-400',
-          accentColor: 'bg-gradient-to-r from-teal-500 to-cyan-400',
-          metrics: [
-            { label: 'Services', value: 'Web Design + Local SEO', green: false },
-            { label: 'Digital Footprint', value: 'Zero → Full', green: true },
-            { label: 'Google Business', value: 'Optimized', green: true },
-            { label: 'Local Search', value: 'Indexed & Ranking', green: true },
-          ],
-          quote: 'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our assisted living brand.',
+          brand: 'MissionCoach AI',
+          industry: 'Software / AI',
+          focus: 'Positioning + digital funnel clarity',
+          summary:
+            'Helped frame a modern AI product in a way that feels actionable, useful, and easier to understand.',
+          tag: 'Software / AI',
+          tagColor: 'bg-brand-blue/15 text-brand-blue',
+          accentClass: 'from-brand-blue to-blue-400',
         },
         {
           brand: 'Euclid Church of Christ',
-          niche: 'Non-Profit · Community · Cleveland, OH',
-          tag: 'Non-Profit',
-          tagClass: 'bg-brand-blue/15 text-brand-blue',
-          accentColor: 'bg-gradient-to-r from-brand-blue to-cyan-400',
-          metrics: [
-            { label: 'Services', value: 'Social + YouTube', green: false },
-            { label: 'YouTube Campaign', value: 'Live', green: true },
-            { label: 'Subscriber Strategy', value: 'Deployed', green: true },
-            { label: 'Community Reach', value: 'Expanded', green: true },
-          ],
-          quote: 'Acefluento helped us build a real digital presence and grow our congregation\'s online community effectively.',
+          industry: 'Church / Organization',
+          focus: 'Digital presence + communication clarity',
+          summary:
+            'Created a stronger online presence to support outreach, credibility, and community engagement.',
+          quote:
+            "Acefluento helped us build a real digital presence and grow our congregation's online community effectively.",
+          tag: 'Organization',
+          tagColor: 'bg-purple-500/15 text-purple-400',
+          accentClass: 'from-purple-500 to-indigo-400',
         },
-      ],
-      globalStats: [
-        { value: '6+', label: 'Brands & Orgs Served', color: 'text-white' },
-        { value: '5.0 ★', label: 'The Manifest Rating', color: 'text-green-400' },
-        { value: 'Top 20', label: 'Event Marketing (The Manifest)', color: 'text-brand-blue' },
-        { value: '100%', label: 'Client Satisfaction', color: 'text-orange-400' },
+        {
+          brand: 'Creative Living Care Group',
+          industry: 'Healthcare / Assisted Living',
+          focus: 'Trust-centered design + inquiry flow',
+          summary:
+            'Built a more credible digital experience designed to support inquiries and reassure families.',
+          quote:
+            'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our brand.',
+          tag: 'Healthcare',
+          tagColor: 'bg-teal-500/15 text-teal-400',
+          accentClass: 'from-teal-500 to-cyan-400',
+        },
       ],
     }
   },

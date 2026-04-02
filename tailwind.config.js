@@ -11,25 +11,25 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          blue: '#1877F2',
-          'blue-dark': '#0d6efd',
-          'blue-light': '#4299e1',
-          orange: '#FF6B2C',
-          'orange-dark': '#e55a1c',
-          dark: '#0A0A0F',
-          'dark-2': '#111118',
-          'dark-3': '#1A1A25',
-          gray: '#8A8AA0',
-          'gray-light': '#F5F5FA',
+          navy: '#0F172A',
+          'navy-2': '#111827',
+          slate: '#334155',
+          gray: '#94A3B8',
+          'gray-light': '#F8FAFC',
+          red: '#D7263D',
+          'red-dark': '#B91C2E',
+          blue: '#2563EB',
+          'blue-dark': '#1D4ED8',
+          emerald: '#10B981',
         },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-hero': 'linear-gradient(135deg, #0A0A0F 0%, #111118 50%, #1A1A25 100%)',
-        'gradient-cta': 'linear-gradient(135deg, #1877F2 0%, #4299e1 100%)',
-        'gradient-card': 'linear-gradient(135deg, rgba(24,119,242,0.08) 0%, rgba(66,153,225,0.04) 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #0F172A 0%, #111827 50%, #1A2235 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #D7263D 0%, #B91C2E 100%)',
+        'gradient-card': 'linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(37,99,235,0.03) 100%)',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',

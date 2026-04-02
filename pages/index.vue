@@ -1,14 +1,17 @@
 <template>
-  <div class="min-h-screen bg-brand-dark text-white font-sans">
+  <div class="min-h-screen bg-brand-navy text-white font-sans">
     <TheNavbar />
     <main>
       <HeroSection />
-      <LogoBar />
+      <TrustStrip />
+      <ProblemSection />
+      <SystemSection />
       <ServicesSection />
+      <WhoWeHelpSection />
       <ResultsSection />
       <ProcessSection />
-      <TestimonialsSection />
       <PricingSection />
+      <FAQSection />
       <CtaSection />
     </main>
     <TheFooter />

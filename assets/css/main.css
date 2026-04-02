@@ -8,32 +8,32 @@
   }
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    background-color: #0A0A0F;
+    background-color: #0F172A;
     color: #ffffff;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4 bg-brand-blue text-white font-semibold rounded-full transition-all duration-300 hover:bg-brand-blue-dark hover:shadow-lg hover:shadow-brand-blue/30 hover:-translate-y-0.5 active:translate-y-0;
+    @apply inline-flex items-center justify-center px-8 py-4 bg-brand-red text-white font-semibold rounded-xl transition-all duration-300 hover:bg-brand-red-dark hover:shadow-lg hover:shadow-brand-red/30 hover:-translate-y-0.5 active:translate-y-0;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-semibold rounded-full transition-all duration-300 hover:border-white/40 hover:bg-white/5;
-  }
-  .btn-orange {
-    @apply inline-flex items-center justify-center px-8 py-4 bg-brand-orange text-white font-semibold rounded-full transition-all duration-300 hover:bg-brand-orange-dark hover:shadow-lg hover:shadow-brand-orange/30 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-semibold rounded-xl transition-all duration-300 hover:border-white/40 hover:bg-white/5;
   }
   .section-label {
     @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-blue/30 bg-brand-blue/10 text-brand-blue text-sm font-medium;
   }
   .card-dark {
-    @apply bg-brand-dark-3 border border-white/[0.08] rounded-2xl p-8 transition-all duration-300 hover:border-brand-blue/30 hover:bg-gradient-card;
+    @apply bg-brand-navy-2 border border-white/[0.08] rounded-2xl p-8 transition-all duration-300 hover:border-brand-blue/25 hover:bg-gradient-card hover:-translate-y-1;
   }
   .gradient-text {
-    @apply bg-gradient-to-r from-white via-blue-200 to-brand-blue bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-slate-200 to-brand-blue bg-clip-text text-transparent;
+  }
+  .glow-red {
+    box-shadow: 0 0 60px rgba(215, 38, 61, 0.15);
   }
   .glow-blue {
-    box-shadow: 0 0 60px rgba(24, 119, 242, 0.15);
+    box-shadow: 0 0 60px rgba(37, 99, 235, 0.12);
   }
   .noise-overlay {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");

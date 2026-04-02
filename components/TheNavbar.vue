@@ -2,20 +2,20 @@
   <nav
     :class="[
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      scrolled ? 'bg-brand-dark/95 backdrop-blur-xl border-b border-white/8 py-3' : 'bg-transparent py-5',
+      scrolled ? 'bg-brand-navy/95 backdrop-blur-xl border-b border-white/8 py-3' : 'bg-transparent py-5',
     ]"
   >
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-2 group">
+      <a href="#" class="flex items-center gap-2.5 group">
         <div
-          class="w-9 h-9 rounded-xl bg-gradient-cta flex items-center justify-center shadow-lg shadow-brand-blue/30 group-hover:shadow-brand-blue/50 transition-shadow"
+          class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/30 group-hover:shadow-brand-red/50 transition-shadow"
         >
           <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
           </svg>
         </div>
-        <span class="text-xl font-bold tracking-tight">Ace<span class="text-brand-blue">fluento</span></span>
+        <span class="text-xl font-bold tracking-tight">Ace<span class="text-brand-red">fluento</span></span>
       </a>
 
       <!-- Desktop Nav -->
@@ -24,7 +24,7 @@
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          class="text-sm text-white/70 hover:text-white transition-colors font-medium"
+          class="text-sm text-white/65 hover:text-white transition-colors font-medium"
         >
           {{ link.label }}
         </a>
@@ -32,7 +32,9 @@
 
       <!-- CTA -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="#contact" class="btn-primary text-sm px-6 py-3"> Book Free Call </a>
+        <a href="#contact" class="btn-primary text-sm px-6 py-3">
+          Book a Strategy Call
+        </a>
       </div>
 
       <!-- Mobile menu toggle -->
@@ -53,7 +55,7 @@
     <!-- Mobile Menu -->
     <div
       v-if="mobileOpen"
-      class="md:hidden bg-brand-dark-2/98 backdrop-blur-xl border-t border-white/8 px-6 py-6 flex flex-col gap-4"
+      class="md:hidden bg-brand-navy/98 backdrop-blur-xl border-t border-white/8 px-6 py-6 flex flex-col gap-4"
     >
       <a
         v-for="link in navLinks"
@@ -64,7 +66,9 @@
       >
         {{ link.label }}
       </a>
-      <a href="#contact" class="btn-primary text-sm mt-2" @click="mobileOpen = false"> Book Free Strategy Call </a>
+      <a href="#contact" class="btn-primary text-sm mt-2" @click="mobileOpen = false">
+        Book a Strategy Call
+      </a>
     </div>
   </nav>
 </template>
@@ -80,10 +84,9 @@ export default Vue.extend({
       mobileOpen: false,
       navLinks: [
         { label: 'Services', href: '#services' },
-        { label: 'Results', href: '#results' },
         { label: 'Process', href: '#process' },
-        { label: 'Testimonials', href: '#testimonials' },
-        { label: 'Pricing', href: '#pricing' },
+        { label: 'Work', href: '#work' },
+        { label: 'FAQs', href: '#faqs' },
       ],
     }
   },

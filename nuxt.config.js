@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Acefluento — Meta Ads & Digital Marketing Agency',
+    title: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
     htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
@@ -11,13 +11,13 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Acefluento LLC — Cleveland, OH digital marketing agency. Meta Ads, SEO, web development, and content marketing. Turn cold traffic into loyal customers. Call 216-808-3109.',
+          'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: 'og:title', content: 'Acefluento — Meta Ads & Digital Marketing Agency' },
+      { property: 'og:title', content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses' },
       {
         property: 'og:description',
-        content: 'Scale your brand with Meta Ads that actually convert. Book a free strategy call today.',
+        content: 'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary_large_image' },

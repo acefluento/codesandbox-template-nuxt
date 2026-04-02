@@ -1,54 +1,53 @@
 <template>
-  <section id="process" class="py-28 relative">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <span class="section-label mb-4">How It Works</span>
+  <section id="process" class="py-28 bg-brand-navy relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-1/3 left-0 w-[400px] h-[400px] bg-brand-blue/5 rounded-full blur-3xl -translate-x-1/3"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+      <!-- Header -->
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <span class="section-label mb-6 inline-flex">How it works</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          From Zero to <span class="gradient-text">Scaling in 30 Days</span>
+          A simple process built<br />for <span class="gradient-text">momentum</span>
         </h2>
-        <p class="text-white/55 text-lg max-w-xl mx-auto">
-          A proven process refined across 200+ brands. Clear milestones, no surprises.
+        <p class="text-white/55 text-lg">
+          Clear steps. No fluff. No mystery.
         </p>
       </div>
 
-      <div class="relative">
-        <!-- Connector line -->
-        <div class="hidden lg:block absolute top-16 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-blue/30 to-transparent"></div>
+      <!-- Steps -->
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Vertical connector line -->
+          <div class="absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-brand-blue/40 via-brand-blue/20 to-transparent hidden sm:block"></div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          <div
-            v-for="(step, i) in steps"
-            :key="step.title"
-            class="relative flex flex-col items-center text-center group"
-          >
-            <!-- Number bubble -->
+          <div class="space-y-6">
             <div
-              class="relative w-14 h-14 rounded-2xl flex items-center justify-center mb-6 font-black text-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-blue/30 z-10"
-              :class="i === 0 ? 'bg-brand-blue text-white' : 'bg-brand-dark-3 border border-white/15 text-white/60 group-hover:bg-brand-blue/20 group-hover:border-brand-blue/40 group-hover:text-brand-blue'"
+              v-for="step in steps"
+              :key="step.number"
+              class="relative flex gap-8 items-start group"
             >
-              {{ String(i + 1).padStart(2, '0') }}
+              <!-- Step number badge -->
+              <div class="relative flex-shrink-0">
+                <div
+                  class="w-16 h-16 rounded-2xl border-2 flex items-center justify-center transition-all duration-300 group-hover:border-brand-blue/60 group-hover:bg-brand-blue/10"
+                  :class="step.number === '01' ? 'border-brand-blue/50 bg-brand-blue/10' : 'border-white/15 bg-brand-navy-2'"
+                >
+                  <span class="text-lg font-black" :class="step.number === '01' ? 'text-brand-blue' : 'text-white/40'">
+                    {{ step.number }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 bg-brand-navy-2 border border-white/[0.07] rounded-2xl p-7 group-hover:border-brand-blue/20 transition-all duration-300">
+                <h3 class="font-bold text-xl mb-2">{{ step.title }}</h3>
+                <p class="text-white/55 text-sm leading-relaxed">{{ step.description }}</p>
+              </div>
             </div>
-
-            <div class="text-2xl mb-3">{{ step.icon }}</div>
-            <h3 class="text-lg font-bold mb-3">{{ step.title }}</h3>
-            <p class="text-white/50 text-sm leading-relaxed">{{ step.description }}</p>
-
-            <!-- Timeline badge -->
-            <span class="mt-4 px-3 py-1 rounded-full bg-white/6 text-white/40 text-xs font-medium">
-              {{ step.timeline }}
-            </span>
           </div>
         </div>
-      </div>
-
-      <!-- CTA under process -->
-      <div class="text-center mt-16">
-        <a href="#contact" class="btn-primary gap-2 group">
-          Start Your 30-Day Growth Sprint
-          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
       </div>
     </div>
   </section>
@@ -63,32 +62,28 @@ export default Vue.extend({
     return {
       steps: [
         {
-          icon: '🔍',
-          title: 'Discovery & Audit',
+          number: '01',
+          title: 'Audit & Align',
           description:
-            'We dig into your funnel, current ads, offer, and competition to identify the biggest growth levers.',
-          timeline: 'Days 1–3',
+            'We look at your business model, audience, current presence, and biggest growth bottlenecks.',
         },
         {
-          icon: '🗺️',
-          title: 'Strategy & Build',
+          number: '02',
+          title: 'Plan the System',
           description:
-            'Custom campaign architecture, creative brief, audience map, and full funnel built for your offer.',
-          timeline: 'Days 4–10',
+            'We map the right combination of messaging, pages, campaigns, and follow-up.',
         },
         {
-          icon: '🚀',
-          title: 'Launch & Test',
+          number: '03',
+          title: 'Build & Launch',
           description:
-            'We go live with rapid testing across creatives, audiences, and angles to find winning combinations fast.',
-          timeline: 'Days 11–21',
+            'We design, write, refine, and launch the assets needed to move the business forward.',
         },
         {
-          icon: '📈',
-          title: 'Optimize & Scale',
+          number: '04',
+          title: 'Optimize & Improve',
           description:
-            'Winners get scaled, losers get cut. We compound your results week over week with data-driven decisions.',
-          timeline: 'Day 22+',
+            'We monitor performance, learn quickly, and keep improving what matters.',
         },
       ],
     }
