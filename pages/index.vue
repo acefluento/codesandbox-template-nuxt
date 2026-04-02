@@ -7,10 +7,10 @@
       <ProblemSection />
       <SystemSection />
       <ServicesSection />
-      <InlineCta message="Not sure which service fits? Start with a strategy call — we'll map out the right combination for your goals." />
+      <InlineCta message="Not sure which service fits? Start with a strategy call — we'll identify the right leverage point for your business." />
       <WhoWeHelpSection />
       <ResultsSection />
-      <InlineCta :dark="true" message="Seen enough? Let's look at what a growth system would look like for your business." />
+      <InlineCta :dark="true" message="If your current site, messaging, or follow-up is costing you leads — let's find out where." />
       <ProcessSection />
       <PricingSection />
       <FAQSection />

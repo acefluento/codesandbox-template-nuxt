@@ -15,24 +15,27 @@
         <div>
           <span class="section-label mb-6 inline-flex">Book a strategy call</span>
 
-          <h2 class="text-4xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
-            Let's build a system that actually moves your<br class="hidden lg:block" />
-            <span class="gradient-text">business forward</span>
+          <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5 leading-tight">
+            If your business is getting attention<br class="hidden lg:block" />
+            but not enough <span class="gradient-text">action</span> —<br class="hidden lg:block" />
+            let's fix the system.
           </h2>
 
-          <p class="text-white/60 text-lg mb-8 leading-relaxed max-w-md">
-            Book a strategy call and we'll look at your current presence, goals, and the clearest next move.
+          <p class="text-white/55 text-base mb-6 leading-relaxed max-w-md">
+            Book a strategy call and we'll identify what is slowing growth down.
           </p>
 
-          <!-- Bullets -->
-          <ul class="space-y-3 mb-10">
-            <li v-for="point in points" :key="point" class="flex items-center gap-3 text-white/65 text-sm">
-              <svg class="w-4 h-4 text-brand-emerald flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
-              {{ point }}
+          <!-- Problem bullets -->
+          <ul class="space-y-2.5 mb-8">
+            <li v-for="gap in gaps" :key="gap" class="flex items-center gap-3 text-white/55 text-sm">
+              <div class="w-1.5 h-1.5 rounded-full bg-brand-red flex-shrink-0"></div>
+              {{ gap }}
             </li>
           </ul>
+
+          <p class="text-white/40 text-sm mb-10 leading-relaxed max-w-xs">
+            You'll leave with a clearer next move — whether we work together or not.
+          </p>
 
           <!-- Direct contact -->
           <div class="flex flex-wrap gap-5 text-white/45 text-sm">
@@ -73,10 +76,12 @@ export default Vue.extend({
   name: 'CtaSection',
   data() {
     return {
-      points: [
-        'Honest feedback on your current presence',
-        'Clear next steps based on your goals',
-        'No-pressure conversation',
+      gaps: [
+        'Weak messaging',
+        'Poor conversion flow',
+        'Unclear offer',
+        'Broken follow-up',
+        'Underperforming pages',
       ],
     }
   },

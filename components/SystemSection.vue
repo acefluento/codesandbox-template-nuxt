@@ -9,10 +9,10 @@
       <div class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">Our system</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          A clearer path from<br /><span class="gradient-text">attention to action</span>
+          A simple system that turns<br /><span class="gradient-text">interest into action</span>
         </h2>
-        <p class="text-white/55 text-lg leading-relaxed">
-          Acefluento combines positioning, digital presence, and follow-up into one conversion-focused system.
+        <p class="text-white/45 text-lg leading-relaxed">
+          Three connected layers. One growth outcome.
         </p>
       </div>
 
@@ -58,12 +58,12 @@
 
       <!-- Closing differentiator -->
       <div class="text-center mt-14 max-w-xl mx-auto">
-        <p class="text-white/70 text-base font-medium leading-relaxed mb-4">
-          We don't just build websites or run ads —<br class="hidden sm:block" />
-          we build systems that turn attention into clients.
+        <p class="text-white/70 text-base font-medium leading-relaxed mb-3">
+          We do not sell random marketing tasks.<br class="hidden sm:block" />
+          We build connected systems that help trust-based brands grow.
         </p>
-        <p class="text-white/35 text-sm">
-          This is not random marketing support. It's a connected growth system.
+        <p class="text-white/30 text-sm">
+          We don't just build websites or run ads — we build the full path from attention to action.
         </p>
       </div>
     </div>
@@ -80,20 +80,20 @@ export default Vue.extend({
       cards: [
         {
           title: 'Attract',
-          subtitle: 'Bring in the right attention with the right message.',
-          bullets: ['Meta ads', 'Local visibility', 'Targeted campaigns', 'Strategic content direction'],
+          subtitle: 'Get in front of the right people with the right message.',
+          bullets: ['High-intent Meta campaigns', 'Local visibility', 'Offer positioning', 'Content direction'],
           iconPath: 'M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728M12 8v4m0 4h.01M12 3a9 9 0 100 18A9 9 0 0012 3z',
         },
         {
           title: 'Convert',
-          subtitle: 'Turn visitors into inquiries, bookings, and buyers.',
-          bullets: ['High-converting landing pages', 'Website messaging', 'Offer framing', 'UX focused on action'],
+          subtitle: 'Turn visits into calls, forms, and booked conversations.',
+          bullets: ['Conversion-engineered landing pages', 'Website messaging', 'Offer framing', 'Clear calls to action'],
           iconPath: 'M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122',
         },
         {
           title: 'Follow Through',
-          subtitle: 'Keep leads from slipping through the cracks.',
-          bullets: ['Lead routing', 'Automation', 'Retargeting', 'Nurture systems', 'Booking flow improvements'],
+          subtitle: 'Make sure leads do not die in the gap.',
+          bullets: ['Faster follow-up', 'Basic automation', 'Booking flow cleanup', 'Retargeting and nurture support'],
           iconPath: 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
         },
       ],

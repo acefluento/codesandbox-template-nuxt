@@ -9,11 +9,8 @@
       <div class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">How it works</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          A simple process built<br />for <span class="gradient-text">momentum</span>
+          Clear process.<br /><span class="gradient-text">No fluff.</span>
         </h2>
-        <p class="text-white/55 text-lg">
-          Clear steps. No fluff. No mystery.
-        </p>
       </div>
 
       <!-- Steps -->
@@ -63,27 +60,27 @@ export default Vue.extend({
       steps: [
         {
           number: '01',
-          title: 'Audit & Align',
+          title: 'Audit',
           description:
-            'We look at your business model, audience, current presence, and biggest growth bottlenecks.',
+            'We identify the bottlenecks in your messaging, website, and conversion flow.',
         },
         {
           number: '02',
-          title: 'Plan the System',
+          title: 'Plan',
           description:
-            'We map the right combination of messaging, pages, campaigns, and follow-up.',
+            'We map the pages, positioning, and systems needed to move the business forward.',
         },
         {
           number: '03',
-          title: 'Build & Launch',
+          title: 'Build',
           description:
-            'We design, write, refine, and launch the assets needed to move the business forward.',
+            'We write, design, refine, and launch what matters most.',
         },
         {
           number: '04',
-          title: 'Optimize & Improve',
+          title: 'Improve',
           description:
-            'We monitor performance, learn quickly, and keep improving what matters.',
+            'We monitor what is working, fix what is not, and keep optimizing.',
         },
       ],
     }

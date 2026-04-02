@@ -18,18 +18,21 @@
           <!-- Eyebrow badge -->
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
             <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse-slow"></span>
-            Growth systems for modern businesses
+            Based in Cleveland, OH · Serving local and remote clients
           </div>
 
           <!-- Headline -->
           <h1 class="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
-            Turn Attention<br />
-            Into <span class="gradient-text">Clients</span>
+            Websites and lead<br />
+            systems for <span class="gradient-text">trust-based<br />local brands</span>
           </h1>
 
           <!-- Subheadline -->
-          <p class="text-lg sm:text-xl text-white/60 max-w-xl mb-8 leading-relaxed">
-            Websites, ads, and systems built to help your business generate more leads and convert them consistently.
+          <p class="text-lg sm:text-xl text-white/60 max-w-xl mb-3 leading-relaxed">
+            We help assisted living facilities, churches, and service brands turn attention into calls, inquiries, and clients.
+          </p>
+          <p class="text-base text-white/40 max-w-xl mb-8 leading-relaxed">
+            Websites alone do not grow a business. You need clear messaging, strong conversion paths, and follow-up that actually happens.
           </p>
 
           <!-- Bullets -->
@@ -45,23 +48,30 @@
           <!-- CTAs -->
           <div class="flex flex-col sm:flex-row gap-4 items-start mb-10">
             <a href="#contact" class="btn-primary text-base gap-2 group">
-              Book Free Strategy Call
+              Book a Strategy Call
               <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#system" class="btn-secondary text-base">
-              See How It Works
+            <a href="#work" class="btn-secondary text-base">
+              See Our Work
             </a>
           </div>
 
-          <!-- Micro proof -->
-          <p class="text-white/35 text-sm">
-            No pressure. Just clarity on your next move.
-          </p>
+          <!-- Proof strip -->
+          <div class="border-t border-white/[0.07] pt-7">
+            <p class="text-white/30 text-xs uppercase tracking-widest font-medium mb-4">
+              Trusted by local service, care, and community-based brands
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span v-for="tag in proofTags" :key="tag" class="inline-flex items-center px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/[0.08] text-white/40 text-xs">
+                {{ tag }}
+              </span>
+            </div>
+          </div>
         </div>
 
-        <!-- Right: Visual composition -->
+        <!-- Right: Visual composition — system dashboard mockup -->
         <div class="relative hidden lg:block">
           <div class="relative w-full h-[520px]">
             <!-- Background glow -->
@@ -91,20 +101,20 @@
               </div>
             </div>
 
-            <!-- Floating card: ads reporting -->
+            <!-- Floating card: acquisition metrics -->
             <div class="absolute bottom-24 right-0 w-52 bg-brand-navy-2 border border-brand-blue/25 rounded-2xl p-4 shadow-xl">
               <div class="flex items-center justify-between mb-3">
-                <span class="text-xs text-white/50 font-medium">Campaign</span>
+                <span class="text-xs text-white/50 font-medium">Acquisition</span>
                 <span class="text-xs text-brand-emerald font-semibold">● Active</span>
               </div>
               <div class="space-y-2">
                 <div class="flex justify-between text-xs">
-                  <span class="text-white/40">Reach</span>
-                  <span class="text-white font-medium">12.4k</span>
+                  <span class="text-white/40">Inquiries</span>
+                  <span class="text-white font-medium">+24 this mo.</span>
                 </div>
                 <div class="flex justify-between text-xs">
-                  <span class="text-white/40">Leads</span>
-                  <span class="text-brand-blue font-medium">38</span>
+                  <span class="text-white/40">Calls booked</span>
+                  <span class="text-brand-blue font-medium">11</span>
                 </div>
                 <div class="flex justify-between text-xs">
                   <span class="text-white/40">Cost/Lead</span>
@@ -167,9 +177,15 @@ export default Vue.extend({
   data() {
     return {
       bullets: [
-        'Strategy before tactics',
-        'Built for conversion, not just looks',
-        'Flexible across local businesses, organizations, and digital brands',
+        'Built for trust-first industries',
+        'Designed to increase inquiries, not just look polished',
+        'Backed by strategy, automation, and conversion thinking',
+      ],
+      proofTags: [
+        'Assisted living web redesigns',
+        'Church communication systems',
+        'Local business lead flow',
+        'Service brand visibility',
       ],
     }
   },

@@ -9,10 +9,10 @@
       <div class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">What we do</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Flexible services.<br /><span class="gradient-text">One strategic goal.</span>
+          Targeted deployments.<br /><span class="gradient-text">One strategic goal.</span>
         </h2>
         <p class="text-white/55 text-lg leading-relaxed">
-          Every engagement is built around growth, not busywork.
+          Choose the leverage point your business needs most right now.
         </p>
       </div>
 
@@ -30,16 +30,11 @@
             </svg>
           </div>
 
-          <h3 class="font-bold text-lg mb-2">{{ service.title }}</h3>
-          <p class="text-white/50 text-sm leading-relaxed mb-5 flex-1">{{ service.description }}</p>
+          <!-- Problem label -->
+          <p class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-2">{{ service.problem }}</p>
 
-          <!-- Best for tag -->
-          <span class="inline-flex items-center gap-1.5 text-xs text-white/30 font-medium">
-            <svg class="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-            </svg>
-            Best for: {{ service.bestFor }}
-          </span>
+          <h3 class="font-bold text-lg mb-2">{{ service.title }}</h3>
+          <p class="text-white/50 text-sm leading-relaxed flex-1">{{ service.description }}</p>
         </div>
       </div>
     </div>
@@ -55,40 +50,46 @@ export default Vue.extend({
     return {
       services: [
         {
-          title: 'Web Design & Landing Pages',
-          description: 'Modern websites built to communicate clearly and convert intentionally.',
-          bestFor: 'Local businesses, organizations',
+          problem: 'For businesses that need a clearer first impression',
+          title: 'Website & Landing Page Builds',
+          description:
+            'For businesses that need a stronger digital presence and better conversion flow — not just a site that looks presentable.',
           iconPath: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2',
         },
         {
-          title: 'Paid Social Campaigns',
-          description: 'Meta ad strategy and campaign execution designed to generate qualified attention.',
-          bestFor: 'Lead generation, e-commerce',
-          iconPath: 'M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z',
-        },
-        {
-          title: 'Brand Messaging & Positioning',
-          description: 'Sharper messaging so the right people understand why you matter faster.',
-          bestFor: 'New brands, repositioning',
+          problem: 'For brands that sound too generic',
+          title: 'Messaging & Positioning',
+          description:
+            'For brands that need sharper, trust-building language so the right people understand why you matter — and why to call.',
           iconPath: 'M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z',
         },
         {
-          title: 'Lead Flow & Automation',
-          description: 'Follow-up systems that improve speed, consistency, and conversion.',
-          bestFor: 'Service businesses, agencies',
+          problem: 'For businesses that need more qualified attention',
+          title: 'Lead Generation Campaigns',
+          description:
+            'For businesses that need more qualified attention coming in consistently — not random clicks or cheap impressions.',
+          iconPath: 'M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z',
+        },
+        {
+          problem: 'For businesses losing leads before they close',
+          title: 'Follow-Up & Automation',
+          description:
+            'For businesses losing leads because nobody responds fast enough or consistently enough — and it is costing real revenue.',
           iconPath: 'M13 10V3L4 14h7v7l9-11h-7z',
         },
         {
-          title: 'Content Direction',
-          description: 'Content systems and creative guidance that support growth across channels.',
-          bestFor: 'Digital brands, creators',
-          iconPath: 'M4 6h16M4 12h8m-8 6h16',
+          problem: 'For brands that want a partner, not a vendor',
+          title: 'Ongoing Optimization',
+          description:
+            'For brands that want a strategic partner refining what already works — testing, improving, and keeping everything sharp.',
+          iconPath: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
         },
         {
-          title: 'Ongoing Optimization',
-          description: 'Continuous testing, iteration, and refinement based on what actually performs.',
-          bestFor: 'Existing campaigns',
-          iconPath: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
+          problem: 'For brands building content with a purpose',
+          title: 'Content Direction',
+          description:
+            'For brands that need a content system aligned to growth — not random posts that generate activity but no traction.',
+          iconPath: 'M4 6h16M4 12h8m-8 6h16',
         },
       ],
     }

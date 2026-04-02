@@ -14,7 +14,7 @@
         </span>
       </div>
       <p class="text-center text-white/30 text-sm mt-6">
-        From painters to churches to software brands — the strategy adapts to the business model.
+        Industries where trust, credibility, and clear follow-through are the difference between a lead and a client.
       </p>
     </div>
   </section>
@@ -28,10 +28,10 @@ export default Vue.extend({
   data() {
     return {
       categories: [
-        'Local Services',
-        'Healthcare & Assisted Living',
+        'Assisted Living & Care Brands',
         'Churches & Organizations',
-        'Startups & Digital Products',
+        'Local Service Businesses',
+        'Select Digital Brands',
       ],
     }
   },

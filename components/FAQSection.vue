@@ -55,34 +55,29 @@ export default Vue.extend({
       openIndex: 0 as number | null,
       faqs: [
         {
-          question: 'Do you only work with one niche?',
+          question: 'Do you only work with assisted living and churches?',
           answer:
-            'No. Acefluento works best with businesses and organizations that need a clearer digital growth system. The strategy adapts to the business model.',
+            "No. Those are strong-fit categories because trust and clarity matter heavily there. We also work with select local service businesses and brands that need stronger conversion systems.",
         },
         {
-          question: 'Do you build websites only, or handle marketing too?',
+          question: 'Do you only build websites?',
           answer:
-            'Both. Some clients need a stronger site first. Others need strategy, campaigns, and follow-up layered together.',
+            'No. We also help with messaging, campaign direction, follow-up systems, and optimization — so the website actually performs after it is built.',
         },
         {
           question: 'Do you offer monthly support?',
           answer:
-            'Yes. Ongoing support is available when it makes sense for the project and growth goals.',
+            'Yes. Ongoing support is available for brands that want continued updates, testing, and strategic execution.',
         },
         {
-          question: 'Can I book a call before committing to anything?',
+          question: 'Can we start with one project first?',
           answer:
-            "Yes. The strategy call is the first step to see whether there's a strong fit.",
+            'Yes. Many clients start with a page build, messaging cleanup, or strategy session before moving into a larger system.',
         },
         {
-          question: 'Do you work with local businesses only?',
+          question: 'What happens on the strategy call?',
           answer:
-            'No. Acefluento can support local businesses, organizations, and digital brands.',
-        },
-        {
-          question: 'How soon can we get started?',
-          answer:
-            'Depends on project scope and availability, but the strategy call is the fastest first step.',
+            'We look at your current presence, identify bottlenecks, and map the clearest next move. No pressure. Just clarity.',
         },
       ],
     }
