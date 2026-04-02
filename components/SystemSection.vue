@@ -56,10 +56,16 @@
         </div>
       </div>
 
-      <!-- Closing line -->
-      <p class="text-center text-white/40 text-sm mt-12 max-w-md mx-auto">
-        This is not random marketing support. It's a connected growth system.
-      </p>
+      <!-- Closing differentiator -->
+      <div class="text-center mt-14 max-w-xl mx-auto">
+        <p class="text-white/70 text-base font-medium leading-relaxed mb-4">
+          We don't just build websites or run ads —<br class="hidden sm:block" />
+          we build systems that turn attention into clients.
+        </p>
+        <p class="text-white/35 text-sm">
+          This is not random marketing support. It's a connected growth system.
+        </p>
+      </div>
     </div>
   </section>
 </template>

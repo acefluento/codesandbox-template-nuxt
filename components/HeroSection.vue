@@ -29,8 +29,7 @@
 
           <!-- Subheadline -->
           <p class="text-lg sm:text-xl text-white/60 max-w-xl mb-8 leading-relaxed">
-            Acefluento builds websites, campaigns, and follow-up systems that help businesses grow
-            with more clarity, more consistency, and less wasted motion.
+            Websites, ads, and systems built to help your business generate more leads and convert them consistently.
           </p>
 
           <!-- Bullets -->
@@ -58,7 +57,7 @@
 
           <!-- Micro proof -->
           <p class="text-white/35 text-sm">
-            Trusted by local businesses, organizations, and growth-minded brands
+            No pressure. Just clarity on your next move.
           </p>
         </div>
 

@@ -7,8 +7,10 @@
       <ProblemSection />
       <SystemSection />
       <ServicesSection />
+      <InlineCta message="Not sure which service fits? Start with a strategy call — we'll map out the right combination for your goals." />
       <WhoWeHelpSection />
       <ResultsSection />
+      <InlineCta :dark="true" message="Seen enough? Let's look at what a growth system would look like for your business." />
       <ProcessSection />
       <PricingSection />
       <FAQSection />
