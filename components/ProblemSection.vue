@@ -8,7 +8,7 @@
       <div class="grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
 
         <!-- Left: Headline copy -->
-        <div>
+        <div v-reveal="'fade-left'">
           <span class="section-label mb-6 inline-flex">The real problem</span>
           <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
             Most businesses aren't losing because nobody sees them.
@@ -27,9 +27,9 @@
         </div>
 
         <!-- Right: Problem list -->
-        <div>
+        <div v-reveal="'fade-right'">
           <p class="text-white/35 text-xs uppercase tracking-widest font-semibold mb-6">Why it breaks down</p>
-          <div class="space-y-4">
+          <div v-stagger="90" class="space-y-4">
             <div
               v-for="problem in problems"
               :key="problem.title"

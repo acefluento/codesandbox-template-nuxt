@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="max-w-2xl mx-auto text-center mb-16">
+      <div v-reveal class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">Our system</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           A simple system that turns<br /><span class="gradient-text">interest into action</span>
@@ -17,7 +17,7 @@
       </div>
 
       <!-- System cards -->
-      <div class="grid lg:grid-cols-3 gap-6 relative">
+      <div v-stagger="120" class="grid lg:grid-cols-3 gap-6 relative">
         <!-- Connecting line (desktop only) -->
         <div class="hidden lg:block absolute top-14 left-1/3 right-1/3 h-px bg-gradient-to-r from-brand-blue/30 via-brand-red/30 to-brand-emerald/30 z-10"></div>
 

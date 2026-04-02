@@ -2,7 +2,7 @@
   <section id="faqs" class="py-28 bg-brand-navy relative overflow-hidden">
     <div class="relative max-w-3xl mx-auto px-6">
       <!-- Header -->
-      <div class="text-center mb-16">
+      <div v-reveal class="text-center mb-16">
         <span class="section-label mb-6 inline-flex">Questions, answered</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4">
           FAQs
@@ -10,7 +10,7 @@
       </div>
 
       <!-- FAQ items -->
-      <div class="space-y-3">
+      <div v-stagger="80" class="space-y-3">
         <div
           v-for="(faq, i) in faqs"
           :key="i"

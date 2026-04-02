@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="text-center mb-16">
+      <div v-reveal class="text-center mb-16">
         <span class="section-label mb-4">Selected work</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Real work built around<br /><span class="gradient-text">real business models</span>
@@ -18,7 +18,7 @@
       </div>
 
       <!-- Case Study Cards -->
-      <div class="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div v-stagger="110" class="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <div
           v-for="study in caseStudies"
           :key="study.brand"

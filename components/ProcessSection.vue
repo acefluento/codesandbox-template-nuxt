@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="max-w-2xl mx-auto text-center mb-16">
+      <div v-reveal class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">How it works</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Clear process.<br /><span class="gradient-text">No fluff.</span>
@@ -19,7 +19,7 @@
           <!-- Vertical connector line -->
           <div class="absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-brand-blue/40 via-brand-blue/20 to-transparent hidden sm:block"></div>
 
-          <div class="space-y-6">
+          <div v-stagger="130" class="space-y-6">
             <div
               v-for="step in steps"
               :key="step.number"

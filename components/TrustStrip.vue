@@ -4,7 +4,7 @@
       <p class="text-center text-white/35 text-sm mb-6 uppercase tracking-widest font-medium">
         Built for businesses that need results, not random marketing
       </p>
-      <div class="flex flex-wrap items-center justify-center gap-3">
+      <div v-stagger="60" class="flex flex-wrap items-center justify-center gap-3">
         <span
           v-for="category in categories"
           :key="category"

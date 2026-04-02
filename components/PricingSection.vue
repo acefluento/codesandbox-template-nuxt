@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="max-w-2xl mx-auto text-center mb-16">
+      <div v-reveal class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">Ways to work together</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Choose the level of support<br /><span class="gradient-text">that fits your stage</span>
@@ -14,7 +14,7 @@
       </div>
 
       <!-- Package cards -->
-      <div class="grid lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+      <div v-stagger="100" class="grid lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
         <div
           v-for="pkg in packages"
           :key="pkg.name"

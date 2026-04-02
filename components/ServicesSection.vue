@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="max-w-2xl mx-auto text-center mb-16">
+      <div v-reveal class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">What we do</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Targeted deployments.<br /><span class="gradient-text">One strategic goal.</span>
@@ -17,7 +17,7 @@
       </div>
 
       <!-- Services grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div v-stagger="100" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <div
           v-for="service in services"
           :key="service.title"

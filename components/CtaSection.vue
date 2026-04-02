@@ -12,7 +12,7 @@
       <div class="grid lg:grid-cols-2 gap-16 items-start">
 
         <!-- Left: Copy -->
-        <div>
+        <div v-reveal="'fade-left'">
           <span class="section-label mb-6 inline-flex">Book a strategy call</span>
 
           <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5 leading-tight">
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Right: Calendly Embed -->
-        <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-brand-blue/8">
+        <div v-reveal="{ delay: 150 }" class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-brand-blue/8">
           <div
             class="calendly-inline-widget"
             data-url="https://calendly.com/acefluento/growth-strategy-call-with-nolan?hide_event_type_details=0&hide_gdpr_banner=1&background_color=111827&text_color=ffffff&primary_color=D7263D"

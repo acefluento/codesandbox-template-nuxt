@@ -6,7 +6,7 @@
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
-      <div class="max-w-2xl mx-auto text-center mb-16">
+      <div v-reveal class="max-w-2xl mx-auto text-center mb-16">
         <span class="section-label mb-6 inline-flex">Who we work with</span>
         <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
           Built for<br /><span class="gradient-text">trust-first businesses</span>
@@ -17,7 +17,7 @@
       </div>
 
       <!-- 3 primary audience blocks -->
-      <div class="grid sm:grid-cols-3 gap-5 max-w-5xl mx-auto mb-8">
+      <div v-stagger="100" class="grid sm:grid-cols-3 gap-5 max-w-5xl mx-auto mb-8">
         <div
           v-for="audience in audiences"
           :key="audience.title"

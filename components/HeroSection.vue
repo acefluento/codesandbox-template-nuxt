@@ -2,8 +2,8 @@
   <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
     <!-- Background -->
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-brand-blue/6 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-brand-red/4 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-brand-blue/6 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-brand-red/4 rounded-full blur-3xl animate-float-delayed"></div>
       <div
         class="absolute inset-0 opacity-[0.025]"
         style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"
@@ -16,27 +16,27 @@
         <!-- Left: Copy -->
         <div>
           <!-- Eyebrow badge -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
+          <div class="animate-hero-1 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 border border-brand-blue/25 text-brand-blue text-sm font-medium mb-8">
             <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse-slow"></span>
             Based in Cleveland, OH · Serving local and remote clients
           </div>
 
           <!-- Headline -->
-          <h1 class="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
+          <h1 class="animate-hero-2 text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
             Websites and lead<br />
             systems for<br /><span style="background: linear-gradient(to right, #ffffff, #cbd5e1, #2563EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block;">trust-based local brands</span>
           </h1>
 
           <!-- Subheadline -->
-          <p class="text-lg sm:text-xl text-white/60 max-w-xl mb-3 leading-relaxed">
+          <p class="animate-hero-3 text-lg sm:text-xl text-white/60 max-w-xl mb-3 leading-relaxed">
             We help assisted living facilities, churches, and service brands turn attention into calls, inquiries, and clients.
           </p>
-          <p class="text-base text-white/40 max-w-xl mb-8 leading-relaxed">
+          <p class="animate-hero-3 text-base text-white/40 max-w-xl mb-8 leading-relaxed">
             Websites alone do not grow a business. You need clear messaging, strong conversion paths, and follow-up that actually happens.
           </p>
 
           <!-- Bullets -->
-          <ul class="space-y-3 mb-10">
+          <ul class="animate-hero-4 space-y-3 mb-10">
             <li v-for="bullet in bullets" :key="bullet" class="flex items-center gap-3 text-white/65 text-sm">
               <svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -46,7 +46,7 @@
           </ul>
 
           <!-- CTAs -->
-          <div class="flex flex-col sm:flex-row gap-4 items-start mb-10">
+          <div class="animate-hero-5 flex flex-col sm:flex-row gap-4 items-start mb-10">
             <a href="#contact" class="btn-primary text-base gap-2 group">
               Book a Strategy Call
               <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,7 +59,7 @@
           </div>
 
           <!-- Proof strip -->
-          <div class="border-t border-white/[0.07] pt-7">
+          <div class="animate-hero-5 border-t border-white/[0.07] pt-7">
             <p class="text-white/30 text-xs uppercase tracking-widest font-medium mb-4">
               Trusted by local service, care, and community-based brands
             </p>
@@ -71,13 +71,12 @@
           </div>
         </div>
 
-        <!-- Right: Visual composition — system dashboard mockup -->
-        <div class="relative hidden lg:block">
+        <!-- Right: Visual composition -->
+        <div class="animate-hero-img relative hidden lg:block">
           <div class="relative w-full h-[520px]">
-            <!-- Background glow -->
             <div class="absolute inset-0 bg-brand-blue/5 rounded-3xl blur-2xl"></div>
 
-            <!-- Main card: website preview -->
+            <!-- Main card -->
             <div class="absolute top-0 left-0 right-12 bg-brand-navy-2 border border-white/10 rounded-2xl p-5 shadow-2xl">
               <div class="flex items-center gap-2 mb-4">
                 <div class="w-3 h-3 rounded-full bg-brand-red/60"></div>
@@ -102,7 +101,7 @@
             </div>
 
             <!-- Floating card: acquisition metrics -->
-            <div class="absolute bottom-24 right-0 w-52 bg-brand-navy-2 border border-brand-blue/25 rounded-2xl p-4 shadow-xl">
+            <div class="animate-float absolute bottom-24 right-0 w-52 bg-brand-navy-2 border border-brand-blue/25 rounded-2xl p-4 shadow-xl">
               <div class="flex items-center justify-between mb-3">
                 <span class="text-xs text-white/50 font-medium">Acquisition</span>
                 <span class="text-xs text-brand-emerald font-semibold">● Active</span>
@@ -126,8 +125,8 @@
               </div>
             </div>
 
-            <!-- Floating card: follow-up automation -->
-            <div class="absolute top-36 -right-4 w-48 bg-brand-navy-2 border border-white/10 rounded-2xl p-4 shadow-xl">
+            <!-- Floating card: follow-up -->
+            <div class="animate-float-delayed absolute top-36 -right-4 w-48 bg-brand-navy-2 border border-white/10 rounded-2xl p-4 shadow-xl">
               <div class="flex items-center gap-2 mb-3">
                 <div class="w-6 h-6 rounded-lg bg-brand-emerald/20 flex items-center justify-center">
                   <svg class="w-3 h-3 text-brand-emerald" fill="currentColor" viewBox="0 0 20 20">
@@ -153,7 +152,7 @@
             </div>
 
             <!-- Floating card: booking -->
-            <div class="absolute bottom-4 left-8 w-44 bg-brand-navy-2 border border-brand-red/20 rounded-2xl p-4 shadow-xl">
+            <div class="animate-float absolute bottom-4 left-8 w-44 bg-brand-navy-2 border border-brand-red/20 rounded-2xl p-4 shadow-xl">
               <div class="text-xs text-white/50 mb-2">New Booking</div>
               <div class="text-sm font-semibold text-white mb-1">Strategy Call</div>
               <div class="text-xs text-brand-red">Tomorrow, 2:00 PM</div>

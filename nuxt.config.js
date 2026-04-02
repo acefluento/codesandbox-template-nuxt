@@ -48,7 +48,7 @@ export default {
 
   css: ['~/assets/css/main.css'],
 
-  plugins: [],
+  plugins: ['~/plugins/animations.client.js'],
 
   components: true,
 
