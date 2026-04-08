@@ -77,7 +77,8 @@ export default Vue.extend({
       mobileOpen: false,
       navLinks: [
         { label: 'Services', href: '#services' },
-        { label: 'Process', href: '#process' },
+        { label: 'Industries', href: '#industries' },
+        { label: 'AI Systems', href: '#ai' },
         { label: 'Work', href: '#work' },
         { label: 'FAQs', href: '#faqs' },
       ],

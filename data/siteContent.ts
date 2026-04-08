@@ -17,6 +17,29 @@ export interface CaseStudy {
   tag: string
   tagColor: string
   accentClass: string
+  ongoingPartner?: boolean
+}
+
+export interface IndustryInsight {
+  title: string
+  icon: string
+  challenge: string
+  tactics: string[]
+  accentColor: string
+  anchor: string
+}
+
+export interface AITool {
+  name: string
+  useCase: string
+  benefit: string
+  icon: string
+}
+
+export interface LeadMagnetSystem {
+  number: string
+  title: string
+  preview: string
 }
 
 export interface ProcessStep {
@@ -124,6 +147,7 @@ export const caseStudies: CaseStudy[] = [
     tag: 'Organization',
     tagColor: 'bg-purple-500/15 text-purple-400',
     accentClass: 'from-purple-500 to-indigo-400',
+    ongoingPartner: true,
   },
   {
     brand: 'Creative Living Care Group',
@@ -136,6 +160,7 @@ export const caseStudies: CaseStudy[] = [
     tag: 'Healthcare',
     tagColor: 'bg-teal-500/15 text-teal-400',
     accentClass: 'from-teal-500 to-cyan-400',
+    ongoingPartner: true,
   },
 ]
 
@@ -294,5 +319,109 @@ export const systemCards: SystemCard[] = [
     bullets: ['Lead routing', 'Automation', 'Retargeting', 'Nurture systems', 'Booking flow improvements'],
     icon: 'repeat',
     color: 'brand-emerald',
+  },
+]
+
+export const industryInsights: IndustryInsight[] = [
+  {
+    title: 'Assisted Living & Care Brands',
+    icon: 'heart',
+    challenge:
+      'Families research facilities for weeks before calling. You need trust before they ever pick up the phone.',
+    tactics: [
+      'AI-scripted follow-up sequences for family inquiry emails and calls',
+      'Automated tour scheduling with SMS confirmation and reminders',
+      'Review generation systems that prompt satisfied families post-move-in',
+      'Trust-centered landing pages built for emotional decision-makers',
+    ],
+    accentColor: 'teal',
+    anchor: '#contact',
+  },
+  {
+    title: 'Churches & Organizations',
+    icon: 'users',
+    challenge:
+      'Digital presence often lags behind the community you serve — making outreach harder and first impressions weaker.',
+    tactics: [
+      'AI-powered content calendars for sermon summaries, events, and announcements',
+      'Automated welcome sequences for new visitors who find you online',
+      'Event promotion systems across email, social, and local search',
+      'Clear communication architecture so visitors know how to get involved',
+    ],
+    accentColor: 'purple',
+    anchor: '#contact',
+  },
+  {
+    title: 'Local Service Businesses',
+    icon: 'tool',
+    challenge:
+      "You're competing on Google with larger companies while manually chasing every lead. The margin for lost follow-up is zero.",
+    tactics: [
+      'Automated quote request follow-ups within 5 minutes via SMS and email',
+      'AI-assisted Google Business Profile optimization for local search dominance',
+      'Lead routing systems that assign, notify, and track every inbound inquiry',
+      "Retargeting campaigns that re-engage visitors who didn't book",
+    ],
+    accentColor: 'emerald',
+    anchor: '#contact',
+  },
+]
+
+export const aiTools: AITool[] = [
+  {
+    name: 'Claude / ChatGPT',
+    useCase: 'Messaging frameworks, ad copy, email sequences, landing page drafts',
+    benefit: 'Cuts content production time significantly while improving specificity',
+    icon: 'cpu',
+  },
+  {
+    name: 'Make.com / Zapier',
+    useCase: 'Lead routing, CRM updates, follow-up triggers, notification systems',
+    benefit: 'Closes the gap between lead capture and first contact — automatically',
+    icon: 'zap',
+  },
+  {
+    name: 'Meta AI + Ad Tools',
+    useCase: 'Campaign optimization, audience targeting, creative testing',
+    benefit: 'Identifies highest-performing ad angles faster and at lower cost',
+    icon: 'target',
+  },
+  {
+    name: 'Review & Reputation Tools',
+    useCase: 'Automated review requests, response drafting, reputation monitoring',
+    benefit: 'Builds social proof passively while protecting brand trust',
+    icon: 'star',
+  },
+]
+
+export const leadMagnetSystems: LeadMagnetSystem[] = [
+  {
+    number: '01',
+    title: 'The Family Inquiry Automation System',
+    preview:
+      'A 3-step automated sequence that responds to every inquiry within 5 minutes — day or night.',
+  },
+  {
+    number: '02',
+    title: 'The AI-Powered Trust Page Framework',
+    preview: 'How to structure your website so families feel confident before they ever visit.',
+  },
+  {
+    number: '03',
+    title: 'The Tour Scheduling & Reminder Flow',
+    preview:
+      'Reduce no-shows and increase booked tours with automated confirmations and SMS reminders.',
+  },
+  {
+    number: '04',
+    title: 'The Post-Move-In Review Engine',
+    preview:
+      'A simple system that generates authentic 5-star reviews from satisfied families — consistently.',
+  },
+  {
+    number: '05',
+    title: 'The Retargeting Loop for Undecided Families',
+    preview:
+      "How to stay in front of families who visited your site but haven't called yet — without being pushy.",
   },
 ]
