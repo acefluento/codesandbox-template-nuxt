@@ -27,9 +27,11 @@ module.exports = {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        'gradient-hero': 'linear-gradient(135deg, #0F172A 0%, #111827 50%, #1A2235 100%)',
+        'gradient-hero':
+          'linear-gradient(135deg, #0F172A 0%, #111827 50%, #1A2235 100%)',
         'gradient-cta': 'linear-gradient(135deg, #D7263D 0%, #B91C2E 100%)',
-        'gradient-card': 'linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(37,99,235,0.03) 100%)',
+        'gradient-card':
+          'linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(37,99,235,0.03) 100%)',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',

@@ -1,17 +1,26 @@
 <template>
-  <section id="testimonials" class="py-28 bg-brand-dark-2 relative overflow-hidden">
+  <section
+    id="testimonials"
+    class="py-28 bg-brand-dark-2 relative overflow-hidden"
+  >
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"
+      ></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-6">
       <div class="text-center mb-16">
         <span class="section-label mb-4">Testimonials</span>
-        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
+        <h2
+          class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5"
+        >
           Don't Take Our Word For It
         </h2>
         <div class="flex items-center justify-center gap-1 mt-2">
           <span v-for="n in 5" :key="n" class="text-yellow-400 text-xl">★</span>
-          <span class="text-white/50 text-sm ml-2">5.0/5 · The Manifest Verified</span>
+          <span class="text-white/50 text-sm ml-2"
+            >5.0/5 · The Manifest Verified</span
+          >
         </div>
       </div>
 
@@ -23,11 +32,15 @@
         >
           <!-- Stars -->
           <div class="flex gap-1 mb-4">
-            <span v-for="n in 5" :key="n" class="text-yellow-400 text-sm">★</span>
+            <span v-for="n in 5" :key="n" class="text-yellow-400 text-sm"
+              >★</span
+            >
           </div>
 
           <!-- Quote -->
-          <p class="text-white/75 text-sm leading-relaxed flex-1 mb-6">"{{ t.quote }}"</p>
+          <p class="text-white/75 text-sm leading-relaxed flex-1 mb-6">
+            "{{ t.quote }}"
+          </p>
 
           <!-- Author -->
           <div class="flex items-center gap-3">
@@ -42,7 +55,9 @@
               <div class="text-white/40 text-xs">{{ t.role }}</div>
             </div>
             <div class="ml-auto">
-              <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-green-500/10 text-green-400">
+              <span
+                class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-green-500/10 text-green-400"
+              >
                 {{ t.result }}
               </span>
             </div>
