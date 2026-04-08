@@ -2,7 +2,8 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+    title:
+      'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
     htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
@@ -14,10 +15,15 @@ export default {
           'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: 'og:title', content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses' },
+      {
+        property: 'og:title',
+        content:
+          'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+      },
       {
         property: 'og:description',
-        content: 'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
+        content:
+          'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -33,7 +39,10 @@ export default {
       },
     ],
     script: [
-      { src: 'https://www.googletagmanager.com/gtag/js?id=G-4MQGGBPE9B', async: true },
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-4MQGGBPE9B',
+        async: true,
+      },
       {
         hid: 'gtag',
         innerHTML: `window.dataLayer = window.dataLayer || [];
@@ -47,7 +56,10 @@ export default {
 
   css: ['~/assets/css/main.css'],
 
-  plugins: ['~/plugins/animations.client.js'],
+  plugins: [
+    '~/plugins/animations.client.js',
+    '~/plugins/speed-insights.client.js',
+  ],
 
   components: true,
 
@@ -57,7 +69,9 @@ export default {
 
   axios: { baseURL: '/' },
 
-  build: {},
+  build: {
+    transpile: ['@vercel/speed-insights'],
+  },
 
   telemetry: false,
 }

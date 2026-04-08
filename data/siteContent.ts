@@ -57,37 +57,43 @@ export const services: Service[] = [
   {
     icon: 'monitor',
     title: 'Web Design & Landing Pages',
-    description: 'Modern websites built to communicate clearly and convert intentionally.',
+    description:
+      'Modern websites built to communicate clearly and convert intentionally.',
     bestFor: 'Local businesses, organizations',
   },
   {
     icon: 'target',
     title: 'Paid Social Campaigns',
-    description: 'Meta ad strategy and campaign execution designed to generate qualified attention.',
+    description:
+      'Meta ad strategy and campaign execution designed to generate qualified attention.',
     bestFor: 'Lead generation, e-commerce',
   },
   {
     icon: 'message-square',
     title: 'Brand Messaging & Positioning',
-    description: 'Sharper messaging so the right people understand why you matter faster.',
+    description:
+      'Sharper messaging so the right people understand why you matter faster.',
     bestFor: 'New brands, repositioning',
   },
   {
     icon: 'zap',
     title: 'Lead Flow & Automation',
-    description: 'Follow-up systems that improve speed, consistency, and conversion.',
+    description:
+      'Follow-up systems that improve speed, consistency, and conversion.',
     bestFor: 'Service businesses, agencies',
   },
   {
     icon: 'layout',
     title: 'Content Direction',
-    description: 'Content systems and creative guidance that support growth across channels.',
+    description:
+      'Content systems and creative guidance that support growth across channels.',
     bestFor: 'Digital brands, creators',
   },
   {
     icon: 'trending-up',
     title: 'Ongoing Optimization',
-    description: 'Continuous testing, iteration, and refinement based on what actually performs.',
+    description:
+      'Continuous testing, iteration, and refinement based on what actually performs.',
     bestFor: 'Existing campaigns',
   },
 ]
@@ -120,7 +126,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       'Created a stronger online presence to support outreach, credibility, and community engagement.',
     quote:
-      'Acefluento helped us build a real digital presence and grow our congregation\'s online community effectively.',
+      "Acefluento helped us build a real digital presence and grow our congregation's online community effectively.",
     tag: 'Organization',
     tagColor: 'bg-purple-500/15 text-purple-400',
     accentClass: 'from-purple-500 to-indigo-400',
@@ -169,7 +175,8 @@ export const processSteps: ProcessStep[] = [
 export const packages: Package[] = [
   {
     name: 'Starter Build',
-    description: 'Best for businesses that need a stronger digital presence fast.',
+    description:
+      'Best for businesses that need a stronger digital presence fast.',
     includes: [
       'Strategy call',
       'Homepage or landing page build',
@@ -227,7 +234,7 @@ export const faqs: FAQ[] = [
   {
     question: 'Can I book a call before committing to anything?',
     answer:
-      'Yes. The strategy call is the first step to see whether there\'s a strong fit.',
+      "Yes. The strategy call is the first step to see whether there's a strong fit.",
   },
   {
     question: 'Do you work with local businesses only?',
@@ -272,7 +279,12 @@ export const systemCards: SystemCard[] = [
   {
     title: 'Attract',
     subtitle: 'Bring in the right attention with the right message.',
-    bullets: ['Meta ads', 'Local visibility', 'Targeted campaigns', 'Strategic content direction'],
+    bullets: [
+      'Meta ads',
+      'Local visibility',
+      'Targeted campaigns',
+      'Strategic content direction',
+    ],
     icon: 'radio',
     color: 'brand-blue',
   },
@@ -291,7 +303,13 @@ export const systemCards: SystemCard[] = [
   {
     title: 'Follow Through',
     subtitle: 'Keep leads from slipping through the cracks.',
-    bullets: ['Lead routing', 'Automation', 'Retargeting', 'Nurture systems', 'Booking flow improvements'],
+    bullets: [
+      'Lead routing',
+      'Automation',
+      'Retargeting',
+      'Nurture systems',
+      'Booking flow improvements',
+    ],
     icon: 'repeat',
     color: 'brand-emerald',
   },
