@@ -11,5 +11,7 @@ module.exports = {
   ],
   plugins: [],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'import/namespace': 'off', // Disable namespace validation for external packages
+  },
 }
