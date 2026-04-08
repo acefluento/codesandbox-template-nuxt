@@ -1,29 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="logoTitle logoDesc">
-  <title id="logoTitle">Acefluento logo</title>
-  <desc id="logoDesc">Acefluento wordmark with an abstract red gradient mark.</desc>
-  <defs>
-    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF4D5A" />
-      <stop offset="100%" stop-color="#C81E37" />
-    </linearGradient>
-    <linearGradient id="brandDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#111827" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path fill="#dc2626" d="M256 0C256 0 128 170.67 128 298.67C128 369.37 185.3 426.67 256 426.67C326.7 426.67 384 369.37 384 298.67C384 170.67 256 0 256 0ZM213.33 426.67V512H298.67V426.67H213.33Z"/>
+</svg>
 
-  <rect x="0" y="0" width="1200" height="320" rx="36" fill="url(#brandDark)"/>
-
-  <g transform="translate(62,32)">
-    <rect width="256" height="256" rx="32" fill="#0B1220" />
-    <path d="M128 42C94 42 67 70 67 104C67 127 79 147 98 159L79 212C77 218 81 224 87 224H169C175 224 179 218 177 212L158 159C177 147 189 127 189 104C189 70 162 42 128 42Z" fill="url(#brandRed)" />
-    <path d="M128 84L151 150H138L132 132H124L118 150H105L128 84ZM128 109L123 122H133L128 109Z" fill="#FFFFFF" />
-  </g>
-
-  <text x="360" y="188" fill="#F8FAFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="0.5">
-    Acefluento
-  </text>
-  <text x="366" y="235" fill="#94A3B8" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="5">
-    WEB • SEO • GOOGLE ADS
-  </text>
 </svg>
