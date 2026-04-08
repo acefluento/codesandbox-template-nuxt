@@ -13,17 +13,37 @@ export default {
         content:
           'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
+      { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: 'og:title', content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Acefluento' },
       {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+      },
+      {
+        hid: 'og:description',
         property: 'og:description',
         content: 'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
       },
-      { property: 'og:type', content: 'website' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'og:url', property: 'og:url', content: 'https://acefluento.com/' },
+      { hid: 'og:image', property: 'og:image', content: 'https://acefluento.com/og-image.svg' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '630' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses' },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
+      },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://acefluento.com/og-image.svg' },
     ],
     link: [
+      { rel: 'canonical', href: 'https://acefluento.com/' },
       { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+      { rel: 'apple-touch-icon', href: '/icon.svg' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
@@ -33,6 +53,18 @@ export default {
       },
     ],
     script: [
+      {
+        type: 'application/ld+json',
+        hid: 'org-schema',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Acefluento',
+          url: 'https://acefluento.com/',
+          logo: 'https://acefluento.com/logo.svg',
+          sameAs: [],
+        }),
+      },
       { src: 'https://www.googletagmanager.com/gtag/js?id=G-4MQGGBPE9B', async: true },
       {
         hid: 'gtag',
@@ -42,7 +74,10 @@ export default {
   gtag('config', 'G-4MQGGBPE9B');`,
       },
     ],
-    __dangerouslyDisableSanitizersByTagID: { gtag: ['innerHTML'] },
+    __dangerouslyDisableSanitizersByTagID: {
+      gtag: ['innerHTML'],
+      'org-schema': ['innerHTML'],
+    },
   },
 
   css: ['~/assets/css/main.css'],

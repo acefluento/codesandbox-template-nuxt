@@ -1,26 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140" width="220" height="140">
-  <!-- Black rounded rect background -->
-  <rect width="220" height="140" rx="14" ry="14" fill="#111111"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Acefluento logo</title>
+  <desc id="logoDesc">Acefluento wordmark with an abstract red gradient mark.</desc>
+  <defs>
+    <linearGradient id="brandRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D5A" />
+      <stop offset="100%" stop-color="#C81E37" />
+    </linearGradient>
+    <linearGradient id="brandDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
 
-  <!-- Spade shape (red) -->
-  <!-- Spade top bulb left -->
-  <path d="M72 95
-    C72 95 30 72 30 48
-    C30 28 50 22 65 35
-    C58 18 68 8 80 8
-    C92 8 102 18 95 35
-    C110 22 130 28 130 48
-    C130 72 88 95 88 95
-    L84 95
-    C86 105 94 110 104 112
-    L56 112
-    C66 110 74 105 76 95
-    Z"
-    fill="#CC1A2E"/>
+  <rect x="0" y="0" width="1200" height="320" rx="36" fill="url(#brandDark)"/>
 
-  <!-- White A letter inside spade -->
-  <text x="80" y="88" font-family="Arial Black, Arial" font-weight="900" font-size="68" fill="white" text-anchor="middle" dominant-baseline="auto">A</text>
+  <g transform="translate(62,32)">
+    <rect width="256" height="256" rx="32" fill="#0B1220" />
+    <path d="M128 42C94 42 67 70 67 104C67 127 79 147 98 159L79 212C77 218 81 224 87 224H169C175 224 179 218 177 212L158 159C177 147 189 127 189 104C189 70 162 42 128 42Z" fill="url(#brandRed)" />
+    <path d="M128 84L151 150H138L132 132H124L118 150H105L128 84ZM128 109L123 122H133L128 109Z" fill="#FFFFFF" />
+  </g>
 
-  <!-- White CE text -->
-  <text x="155" y="95" font-family="Arial Black, Arial" font-weight="900" font-size="72" fill="white" text-anchor="middle" dominant-baseline="auto">CE</text>
+  <text x="360" y="188" fill="#F8FAFC" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="0.5">
+    Acefluento
+  </text>
+  <text x="366" y="235" fill="#94A3B8" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="5">
+    WEB • SEO • GOOGLE ADS
+  </text>
 </svg>
