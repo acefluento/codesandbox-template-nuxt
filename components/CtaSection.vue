@@ -56,12 +56,26 @@
         </div>
 
         <!-- Right: Calendly Embed -->
-        <div v-reveal="{ delay: 150 }" class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-brand-blue/8">
+        <div
+          ref="calendlyContainer"
+          v-reveal="{ delay: 150 }"
+          class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-brand-blue/8 min-h-[700px]"
+        >
           <div
+            v-if="isCalendlyLoaded"
             class="calendly-inline-widget"
             data-url="https://calendly.com/acefluento/growth-strategy-call-with-nolan?hide_event_type_details=0&hide_gdpr_banner=1&background_color=111827&text_color=ffffff&primary_color=D7263D"
             style="min-width:320px;height:700px;"
           ></div>
+
+          <div v-else class="h-full min-h-[700px] p-8 bg-brand-navy-2/70 flex items-center justify-center">
+            <div class="max-w-sm text-center">
+              <p class="text-white/70 text-base mb-5">Load the scheduler when you're ready to book.</p>
+              <button class="btn-primary" @click="loadCalendly">
+                Load booking calendar
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -71,6 +85,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
+const CALENDLY_SCRIPT_ID = 'calendly-widget-script'
+const CALENDLY_STYLE_ID = 'calendly-widget-style'
 
 export default Vue.extend({
   name: 'CtaSection',
@@ -83,7 +100,85 @@ export default Vue.extend({
         'Broken follow-up',
         'Underperforming pages',
       ],
+      isCalendlyLoaded: false,
+      calendlyObserver: null as IntersectionObserver | null,
     }
+  },
+  mounted() {
+    this.setupCalendlyObserver()
+  },
+  beforeDestroy() {
+    if (this.calendlyObserver) {
+      this.calendlyObserver.disconnect()
+    }
+  },
+  methods: {
+    setupCalendlyObserver() {
+      const container = this.$refs.calendlyContainer as HTMLElement | undefined
+      if (!container || typeof window === 'undefined') return
+
+      this.calendlyObserver = new window.IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.loadCalendly()
+              if (this.calendlyObserver) {
+                this.calendlyObserver.disconnect()
+              }
+            }
+          })
+        },
+        { rootMargin: '200px 0px' }
+      )
+
+      this.calendlyObserver.observe(container)
+    },
+    async loadCalendly() {
+      if (this.isCalendlyLoaded) return
+
+      this.isCalendlyLoaded = true
+      await this.$nextTick()
+
+      this.ensureCalendlyStyle()
+      await this.ensureCalendlyScript()
+
+      const calendly = (window as Window & { Calendly?: { initInlineWidgets: () => void } }).Calendly
+      if (calendly && typeof calendly.initInlineWidgets === 'function') {
+        calendly.initInlineWidgets()
+      }
+    },
+    ensureCalendlyStyle() {
+      if (document.getElementById(CALENDLY_STYLE_ID)) return
+
+      const link = document.createElement('link')
+      link.id = CALENDLY_STYLE_ID
+      link.rel = 'stylesheet'
+      link.href = 'https://assets.calendly.com/assets/external/widget.css'
+      document.head.appendChild(link)
+    },
+    ensureCalendlyScript() {
+      return new Promise<void>((resolve) => {
+        const calendly = (window as Window & { Calendly?: { initInlineWidgets: () => void } }).Calendly
+        if (calendly) {
+          resolve()
+          return
+        }
+
+        const existingScript = document.getElementById(CALENDLY_SCRIPT_ID) as HTMLScriptElement | null
+        if (existingScript) {
+          existingScript.addEventListener('load', () => resolve(), { once: true })
+          return
+        }
+
+        const script = document.createElement('script')
+        script.id = CALENDLY_SCRIPT_ID
+        script.src = 'https://assets.calendly.com/assets/external/widget.js'
+        script.async = true
+        script.defer = true
+        script.onload = () => resolve()
+        document.body.appendChild(script)
+      })
+    },
   },
 })
 </script>
