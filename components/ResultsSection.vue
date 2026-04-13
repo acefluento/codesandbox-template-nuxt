@@ -34,9 +34,17 @@
                 <h3 class="font-bold text-lg">{{ study.brand }}</h3>
                 <p class="text-white/35 text-xs mt-0.5">{{ study.industry }}</p>
               </div>
-              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold" :class="study.tagColor">
-                {{ study.tag }}
-              </span>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold" :class="study.tagColor">
+                  {{ study.tag }}
+                </span>
+                <span v-if="study.ongoingPartner" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-brand-emerald/15 text-brand-emerald">
+                  <svg class="w-2.5 h-2.5" viewBox="0 0 8 8" fill="currentColor">
+                    <circle cx="4" cy="4" r="3" />
+                  </svg>
+                  Ongoing Partner
+                </span>
+              </div>
             </div>
 
             <!-- Problem -->
@@ -90,6 +98,7 @@ export default Vue.extend({
             'A more professional online presence built to reassure families and support lead flow — moving from zero visibility to a functional digital foundation.',
           quote:
             'From zero online visibility to a fully optimized, lead-generating digital presence — Acefluento engineered a complete digital transformation for our brand.',
+          ongoingPartner: true,
         },
         {
           brand: 'Euclid Church of Christ',
@@ -105,6 +114,7 @@ export default Vue.extend({
             'Improved digital credibility and community engagement — making it easier for people to find, trust, and engage with the organization.',
           quote:
             "Acefluento helped us build a real digital presence and grow our congregation's online community effectively.",
+          ongoingPartner: true,
         },
         {
           brand: 'JR Global',

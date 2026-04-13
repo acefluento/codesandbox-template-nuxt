@@ -6,10 +6,13 @@
       <TrustStrip />
       <ProblemSection />
       <SystemSection />
+      <AIWorkflowSection />
       <ServicesSection />
       <InlineCta message="Not sure which service fits? Start with a strategy call — we'll identify the right leverage point for your business." />
       <WhoWeHelpSection />
+      <IndustryInsightsSection />
       <ResultsSection />
+      <LeadMagnetSection />
       <InlineCta :dark="true" message="If your current site, messaging, or follow-up is costing you leads — let's find out where." />
       <ProcessSection />
       <PricingSection />
