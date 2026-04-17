@@ -48,18 +48,18 @@
     <!-- Mobile Menu -->
     <div
       v-if="mobileOpen"
-      class="md:hidden bg-brand-navy/98 backdrop-blur-xl border-t border-white/8 px-6 py-6 flex flex-col gap-4"
+      class="md:hidden absolute top-full left-0 right-0 bg-brand-navy min-h-screen px-6 py-8 flex flex-col gap-2"
     >
       <a
         v-for="link in navLinks"
         :key="link.href"
         :href="link.href"
-        class="text-white/70 hover:text-white font-medium py-2 transition-colors"
+        class="text-white/70 hover:text-white font-semibold text-lg py-3 border-b border-white/[0.06] transition-colors"
         @click="mobileOpen = false"
       >
         {{ link.label }}
       </a>
-      <a href="#contact" class="btn-primary text-sm mt-2" @click="mobileOpen = false">
+      <a href="#contact" class="btn-primary text-base mt-4 py-4 text-center" @click="mobileOpen = false">
         Book a Strategy Call
       </a>
     </div>
