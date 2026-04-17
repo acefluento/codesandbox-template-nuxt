@@ -43,8 +43,11 @@ import type { Review, Platform } from '~/data/alfDashboard'
 
 type FilterValue = 'all' | 'flagged' | Platform
 
+import DashReviewCard from '~/components/alf/dashboard/DashReviewCard.vue'
+
 export default Vue.extend({
   name: 'DashReviewFeed',
+  components: { DashReviewCard },
   data() {
     return {
       activeFilter: 'all' as FilterValue,

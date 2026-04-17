@@ -113,8 +113,16 @@
 import Vue from 'vue'
 import type { Review } from '~/data/alfDashboard'
 
+import DashStatsBar from '~/components/alf/dashboard/DashStatsBar.vue'
+import DashReviewFeed from '~/components/alf/dashboard/DashReviewFeed.vue'
+import DashPlatformBreakdown from '~/components/alf/dashboard/DashPlatformBreakdown.vue'
+import DashCampaignStatus from '~/components/alf/dashboard/DashCampaignStatus.vue'
+import DashSentimentChart from '~/components/alf/dashboard/DashSentimentChart.vue'
+import DashAiModal from '~/components/alf/dashboard/DashAiModal.vue'
+
 export default Vue.extend({
   name: 'AlfDashboard',
+  components: { DashStatsBar, DashReviewFeed, DashPlatformBreakdown, DashCampaignStatus, DashSentimentChart, DashAiModal },
   layout: false,
   head() {
     return {
