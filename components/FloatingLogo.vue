@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed inset-0 flex items-center justify-center pointer-events-none z-20" aria-hidden="true">
+  <div class="fixed left-0 right-0 flex justify-center pointer-events-none z-20 logo-pos" aria-hidden="true">
     <div class="float-container">
-      <span class="logo-a">a</span>
+      <span class="logo-word">ace<span class="logo-fluento">fluento</span></span>
       <div class="glow-shadow"></div>
     </div>
   </div>
@@ -16,6 +16,10 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.logo-pos {
+  top: 18%;
+}
+
 .float-container {
   display: flex;
   flex-direction: column;
@@ -25,34 +29,40 @@ export default Vue.extend({
   transform-style: preserve-3d;
 }
 
-.logo-a {
+.logo-word {
   display: block;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 180px;
+  font-size: 72px;
   font-weight: 900;
   line-height: 1;
-  color: rgba(215, 38, 61, 0.22);
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.10);
   user-select: none;
-  letter-spacing: -0.04em;
   text-shadow:
-    1px 1px 0 rgba(185, 28, 46, 0.20),
-    2px 2px 0 rgba(175, 26, 43, 0.19),
-    3px 3px 0 rgba(160, 24, 39, 0.18),
-    4px 4px 0 rgba(145, 21, 35, 0.17),
-    5px 5px 0 rgba(130, 19, 31, 0.15),
-    6px 6px 0 rgba(115, 17, 28, 0.13),
-    7px 7px 0 rgba(100, 15, 24, 0.11),
-    8px 8px 0 rgba(85, 12, 20, 0.09),
-    9px 9px 12px rgba(0, 0, 0, 0.12),
-    0 0 60px rgba(215, 38, 61, 0.12),
-    0 0 120px rgba(215, 38, 61, 0.06);
+    1px 1px 0 rgba(180, 180, 180, 0.08),
+    2px 2px 0 rgba(160, 160, 160, 0.07),
+    3px 3px 0 rgba(140, 140, 140, 0.06),
+    4px 4px 0 rgba(120, 120, 120, 0.05),
+    5px 5px 8px rgba(0, 0, 0, 0.08),
+    0 0 40px rgba(255, 255, 255, 0.04);
+}
+
+.logo-fluento {
+  color: rgba(215, 38, 61, 0.13);
+  text-shadow:
+    1px 1px 0 rgba(185, 28, 46, 0.11),
+    2px 2px 0 rgba(160, 24, 39, 0.10),
+    3px 3px 0 rgba(140, 20, 33, 0.08),
+    4px 4px 0 rgba(120, 18, 28, 0.06),
+    5px 5px 8px rgba(0, 0, 0, 0.08),
+    0 0 40px rgba(215, 38, 61, 0.06);
 }
 
 .glow-shadow {
-  width: 110px;
-  height: 14px;
-  margin-top: 6px;
-  background: radial-gradient(ellipse, rgba(215, 38, 61, 0.22) 0%, transparent 70%);
+  width: 180px;
+  height: 10px;
+  margin-top: 4px;
+  background: radial-gradient(ellipse, rgba(215, 38, 61, 0.10) 0%, transparent 70%);
   border-radius: 50%;
   animation: shadow-pulse 4.5s ease-in-out infinite;
 }
@@ -62,18 +72,18 @@ export default Vue.extend({
     transform: translateY(0px) rotateX(0deg) rotateY(0deg);
   }
   25% {
-    transform: translateY(-22px) rotateX(7deg) rotateY(-3deg);
+    transform: translateY(-14px) rotateX(5deg) rotateY(-2deg);
   }
   50% {
-    transform: translateY(-30px) rotateX(3deg) rotateY(5deg);
+    transform: translateY(-20px) rotateX(2deg) rotateY(3deg);
   }
   75% {
-    transform: translateY(-14px) rotateX(-4deg) rotateY(-2deg);
+    transform: translateY(-9px) rotateX(-3deg) rotateY(-1deg);
   }
 }
 
 @keyframes shadow-pulse {
-  0%, 100% { transform: scaleX(1) scaleY(1); opacity: 1; }
-  50% { transform: scaleX(0.55) scaleY(0.7); opacity: 0.45; }
+  0%, 100% { transform: scaleX(1); opacity: 1; }
+  50% { transform: scaleX(0.6); opacity: 0.4; }
 }
 </style>
