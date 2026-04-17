@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path fill="#dc2626" d="M256 0C256 0 128 170.67 128 298.67C128 369.37 185.3 426.67 256 426.67C326.7 426.67 384 369.37 384 298.67C384 170.67 256 0 256 0ZM213.33 426.67V512H298.67V426.67H213.33Z"/>
-</svg>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 36">
+  <path fill="#D7263D"
+    d="M15 2 C15 2 2 11 2 21 A7 7 0 0 0 13 24
+       C12 28 10 30 6 32 H24 C20 30 18 28 17 24
+       A7 7 0 0 0 28 21 C28 11 15 2 15 2Z"/>
+  <text x="36" y="26"
+    font-family="-apple-system,BlinkMacSystemFont,'Inter','Segoe UI',Arial,sans-serif"
+    font-size="21" font-weight="700" letter-spacing="-0.3" fill="white">Ace<tspan fill="#D7263D">fluento</tspan></text>
 </svg>
