@@ -11,7 +11,7 @@
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </svg>
             </div>
-            <span class="text-xl font-bold tracking-tight">Ace<span class="text-brand-red">fluento</span></span>
+            <span class="text-xl font-bold tracking-tight">ace<span class="text-brand-red">fluento</span></span>
           </a>
           <p class="text-white/40 text-sm leading-relaxed max-w-xs">
             Acefluento builds modern growth systems for businesses that want clarity, trust, and conversion.

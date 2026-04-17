@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-brand-navy text-white font-sans">
+    <FloatingLogo />
     <TheNavbar />
     <main>
       <HeroSection />
