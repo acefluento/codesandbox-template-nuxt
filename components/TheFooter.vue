@@ -5,7 +5,7 @@
 
         <!-- Column 1: Brand -->
         <div class="col-span-2 lg:col-span-1">
-          <a href="#" class="flex items-center gap-2.5 mb-5">
+          <a href="/" class="flex items-center gap-2.5 mb-5">
             <div class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/20">
               <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -103,12 +103,13 @@ export default Vue.extend({
     return {
       year: new Date().getFullYear(),
       navLinks: [
-        { label: 'Home', href: '#' },
-        { label: 'Services', href: '#services' },
-        { label: 'Work', href: '#work' },
-        { label: 'Process', href: '#process' },
-        { label: 'FAQs', href: '#faqs' },
-        { label: 'Book a Call', href: '#contact' },
+        { label: 'Home', href: '/' },
+        { label: 'Services', href: '/#services' },
+        { label: 'Work', href: '/#work' },
+        { label: 'Process', href: '/#process' },
+        { label: 'FAQs', href: '/#faqs' },
+        { label: 'ALF Reputation Engine', href: '/alf-reputation-engine' },
+        { label: 'Book a Call', href: '/#contact' },
       ],
       socials: [
         {
