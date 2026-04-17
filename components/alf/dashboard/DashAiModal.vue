@@ -87,8 +87,10 @@
 
 <script lang="ts">
 import Vue, { PropType } from 'vue'
-import type { Review, Platform } from '~/data/alfDashboard'
+import type { Review, AiDraftResponse, Platform } from '~/data/alfDashboard'
 import { aiDraftResponses } from '~/data/alfDashboard'
+
+type ModalThis = Vue & { review: Review; draft: AiDraftResponse | null; copied: boolean }
 
 export default Vue.extend({
   name: 'DashAiModal',
@@ -104,10 +106,10 @@ export default Vue.extend({
     }
   },
   computed: {
-    draft() {
+    draft(this: ModalThis) {
       return aiDraftResponses.find((d) => d.reviewId === this.review.id) ?? null
     },
-    platformLabel(): string {
+    platformLabel(this: ModalThis): string {
       const labels: Record<Platform, string> = {
         google: 'Google',
         yelp: 'Yelp',
@@ -116,7 +118,7 @@ export default Vue.extend({
       }
       return labels[this.review.platform]
     },
-    platformBg(): string {
+    platformBg(this: ModalThis): string {
       const bgs: Record<Platform, string> = {
         google: 'bg-yellow-400/10',
         yelp: 'bg-brand-red/10',
@@ -125,7 +127,7 @@ export default Vue.extend({
       }
       return bgs[this.review.platform]
     },
-    platformText(): string {
+    platformText(this: ModalThis): string {
       const texts: Record<Platform, string> = {
         google: 'text-yellow-400',
         yelp: 'text-brand-red',
@@ -142,7 +144,7 @@ export default Vue.extend({
     document.body.style.overflow = ''
   },
   methods: {
-    async copyDraft() {
+    async copyDraft(this: ModalThis) {
       if (!this.draft) return
       try {
         await navigator.clipboard.writeText(this.draft.draft)

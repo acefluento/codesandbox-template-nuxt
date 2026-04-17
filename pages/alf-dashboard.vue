@@ -120,56 +120,61 @@ import DashCampaignStatus from '~/components/alf/dashboard/DashCampaignStatus.vu
 import DashSentimentChart from '~/components/alf/dashboard/DashSentimentChart.vue'
 import DashAiModal from '~/components/alf/dashboard/DashAiModal.vue'
 
+type SidebarItem = { label: string; icon: string; active: boolean; badge: string | null }
+
+const sidebarItems: SidebarItem[] = [
+  {
+    label: 'Reviews',
+    icon: 'M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z',
+    active: true,
+    badge: '2',
+  },
+  {
+    label: 'Sentiment',
+    icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
+    active: false,
+    badge: null,
+  },
+  {
+    label: 'Campaigns',
+    icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
+    active: false,
+    badge: null,
+  },
+  {
+    label: 'Settings',
+    icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+    active: false,
+    badge: null,
+  },
+]
+
+interface DashboardData {
+  modalOpen: boolean
+  activeReview: Review | null
+  sidebarItems: SidebarItem[]
+}
+
 export default Vue.extend({
   name: 'AlfDashboard',
   components: { DashStatsBar, DashReviewFeed, DashPlatformBreakdown, DashCampaignStatus, DashSentimentChart, DashAiModal },
-  layout: false,
   head() {
     return {
       title: 'ALF Reputation Engine — Dashboard Demo | Magnolia Manor',
       meta: [{ name: 'robots', content: 'noindex,nofollow' }],
     }
   },
-  data() {
-    return {
-      modalOpen: false,
-      activeReview: null as Review | null,
-      sidebarItems: [
-        {
-          label: 'Reviews',
-          icon: 'M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z',
-          active: true,
-          badge: '2',
-        },
-        {
-          label: 'Sentiment',
-          icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
-          active: false,
-          badge: null,
-        },
-        {
-          label: 'Campaigns',
-          icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
-          active: false,
-          badge: null,
-        },
-        {
-          label: 'Settings',
-          icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
-          active: false,
-          badge: null,
-        },
-      ],
-    }
+  data(): DashboardData {
+    return { modalOpen: false, activeReview: null, sidebarItems }
   },
   methods: {
     openAiModal(review: Review) {
-      this.activeReview = review
-      this.modalOpen = true
+      const d = this.$data as DashboardData
+      d.activeReview = review
+      d.modalOpen = true
     },
     closeModal() {
-      this.modalOpen = false
-      this.activeReview = null
+      (this.$data as DashboardData).modalOpen = false
     },
   },
 })

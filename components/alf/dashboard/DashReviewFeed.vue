@@ -45,6 +45,8 @@ type FilterValue = 'all' | 'flagged' | Platform
 
 import DashReviewCard from '~/components/alf/dashboard/DashReviewCard.vue'
 
+type FeedThis = Vue & { activeFilter: FilterValue; allReviews: Review[] }
+
 export default Vue.extend({
   name: 'DashReviewFeed',
   components: { DashReviewCard },
@@ -55,12 +57,12 @@ export default Vue.extend({
     }
   },
   computed: {
-    filteredReviews(): Review[] {
+    filteredReviews(this: FeedThis): Review[] {
       if (this.activeFilter === 'all') return this.allReviews
       if (this.activeFilter === 'flagged') return this.allReviews.filter((r) => r.flagged)
       return this.allReviews.filter((r) => r.platform === this.activeFilter)
     },
-    tabs() {
+    tabs(this: FeedThis) {
       const flaggedCount = this.allReviews.filter((r) => r.flagged).length
       return [
         { value: 'all', label: 'All', count: this.allReviews.length },
