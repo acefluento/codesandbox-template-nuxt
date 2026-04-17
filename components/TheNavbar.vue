@@ -7,7 +7,7 @@
   >
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-2.5 group">
+      <a href="/" class="flex items-center gap-2.5 group">
         <img src="/logo.svg" alt="Acefluento" class="h-9 w-auto" width="180" height="36" decoding="async" fetchpriority="high" />
       </a>
 
@@ -76,10 +76,11 @@ export default Vue.extend({
       scrolled: false,
       mobileOpen: false,
       navLinks: [
-        { label: 'Services', href: '#services' },
-        { label: 'Process', href: '#process' },
-        { label: 'Work', href: '#work' },
-        { label: 'FAQs', href: '#faqs' },
+        { label: 'Services', href: '/#services' },
+        { label: 'Process', href: '/#process' },
+        { label: 'Work', href: '/#work' },
+        { label: 'FAQs', href: '/#faqs' },
+        { label: 'ALF Reputation Engine', href: '/alf-reputation-engine' },
       ],
     }
   },
