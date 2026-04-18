@@ -8,7 +8,7 @@
           <a href="/" class="flex items-center gap-2.5 mb-5">
             <div class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/20">
               <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                <path d="M12 2.5C8.5 2.5 3.5 6.5 3.5 11C3.5 14.5 5.8 16.8 9.5 16.2C8.2 16.8 8.5 18.8 7.2 20H16.8C15.5 18.8 15.8 16.8 14.5 16.2C18.2 16.8 20.5 14.5 20.5 11C20.5 6.5 15.5 2.5 12 2.5Z"/>
               </svg>
             </div>
             <span class="text-xl font-bold tracking-tight">ace<span class="text-brand-red">fluento</span></span>

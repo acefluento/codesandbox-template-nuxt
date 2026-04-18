@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path fill="#dc2626" d="M256 0C256 0 128 170.67 128 298.67C128 369.37 185.3 426.67 256 426.67C326.7 426.67 384 369.37 384 298.67C384 170.67 256 0 256 0ZM213.33 426.67V512H298.67V426.67H213.33Z"/>
-</svg>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 38" fill="none">
+  <!-- Spade icon -->
+  <path fill="#D7263D" d="M17 2C11 2 2 9.5 2 17.5C2 23.5 6 27.5 12.5 26.5C10.5 27.5 11 30.5 9 32.5H25C23 30.5 23.5 27.5 21.5 26.5C28 27.5 32 23.5 32 17.5C32 9.5 23 2 17 2Z"/>
+  <!-- wordmark -->
+  <text x="39" y="27" font-family="Inter,-apple-system,BlinkMacSystemFont,sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="white">ace</text>
+  <text x="84" y="27" font-family="Inter,-apple-system,BlinkMacSystemFont,sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="#D7263D">fluento</text>
 </svg>
