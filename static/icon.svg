@@ -1,3 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path fill="#dc2626" d="M256 0C256 0 128 170.67 128 298.67C128 369.37 185.3 426.67 256 426.67C326.7 426.67 384 369.37 384 298.67C384 170.67 256 0 256 0ZM213.33 426.67V512H298.67V426.67H213.33Z"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Acefluento Favicon</title>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#111315"/>
+
+  <!-- Main A mark -->
+  <path
+    d="M88 410L216 102C231 66 281 66 296 102L424 410H337L313 348H198L174 410H88Z"
+    fill="#D1233B"
+  />
+
+  <!-- Inner cutout -->
+  <path
+    d="M223 281L256 193L289 281H223Z"
+    fill="#111315"
+  />
+
+  <!-- Sharp lower accent -->
+  <path
+    d="M190 348H322L351 410H161L190 348Z"
+    fill="#F43A4F"
+    opacity="0.9"
+  />
+
+  <!-- Subtle right edge depth -->
+  <path
+    d="M296 102L424 410H337L256 193L296 102Z"
+    fill="#B91C2D"
+    opacity="0.55"
+  />
 </svg>
