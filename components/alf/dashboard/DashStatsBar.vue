@@ -10,12 +10,28 @@
           class="w-9 h-9 rounded-xl flex items-center justify-center"
           :class="stat.iconBg"
         >
-          <svg class="w-5 h-5" :class="stat.iconColor" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="stat.icon" />
+          <svg
+            class="w-5 h-5"
+            :class="stat.iconColor"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              :d="stat.icon"
+            />
           </svg>
         </div>
-        <span v-if="stat.alert" class="flex items-center gap-1 text-brand-red text-xs font-medium">
-          <span class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+        <span
+          v-if="stat.alert"
+          class="flex items-center gap-1 text-brand-red text-xs font-medium"
+        >
+          <span
+            class="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"
+          ></span>
           Action
         </span>
       </div>

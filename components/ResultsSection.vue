@@ -1,18 +1,25 @@
 <template>
   <section id="work" class="py-28 bg-brand-navy relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-48 bg-brand-blue/5 rounded-full blur-3xl"></div>
+      <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-48 bg-brand-blue/5 rounded-full blur-3xl"
+      ></div>
     </div>
 
     <div class="relative max-w-7xl mx-auto px-6">
       <!-- Header -->
       <div v-reveal class="text-center mb-16">
         <span class="section-label mb-4">Selected work</span>
-        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5">
-          Real work built around<br /><span class="gradient-text">real business models</span>
+        <h2
+          class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-5"
+        >
+          Real work built around<br /><span class="gradient-text"
+            >real business models</span
+          >
         </h2>
         <p class="text-white/50 text-lg max-w-xl mx-auto leading-relaxed">
-          Different audience. Different trust barrier. Different buying journey.<br />
+          Different audience. Different trust barrier. Different buying
+          journey.<br />
           Same goal: make it easier for the right people to take the next step.
         </p>
       </div>
@@ -25,7 +32,10 @@
           class="relative bg-brand-navy-2 border border-white/[0.08] rounded-2xl overflow-hidden group hover:border-brand-blue/25 hover:-translate-y-1 transition-all duration-300"
         >
           <!-- Top accent -->
-          <div class="h-1 w-full bg-gradient-to-r" :class="study.accentClass"></div>
+          <div
+            class="h-1 w-full bg-gradient-to-r"
+            :class="study.accentClass"
+          ></div>
 
           <div class="p-7">
             <!-- Tag + brand -->
@@ -34,31 +44,55 @@
                 <h3 class="font-bold text-lg">{{ study.brand }}</h3>
                 <p class="text-white/35 text-xs mt-0.5">{{ study.industry }}</p>
               </div>
-              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold" :class="study.tagColor">
+              <span
+                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold"
+                :class="study.tagColor"
+              >
                 {{ study.tag }}
               </span>
             </div>
 
             <!-- Problem -->
             <div class="mb-4">
-              <p class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5">The problem</p>
-              <p class="text-white/65 text-sm leading-relaxed">{{ study.problem }}</p>
+              <p
+                class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5"
+              >
+                The problem
+              </p>
+              <p class="text-white/65 text-sm leading-relaxed">
+                {{ study.problem }}
+              </p>
             </div>
 
             <!-- What we changed -->
             <div class="mb-4">
-              <p class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5">What we changed</p>
-              <p class="text-white/65 text-sm leading-relaxed">{{ study.changed }}</p>
+              <p
+                class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5"
+              >
+                What we changed
+              </p>
+              <p class="text-white/65 text-sm leading-relaxed">
+                {{ study.changed }}
+              </p>
             </div>
 
             <!-- Why it mattered -->
             <div class="mb-5">
-              <p class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5">Why it mattered</p>
-              <p class="text-white/65 text-sm leading-relaxed">{{ study.outcome }}</p>
+              <p
+                class="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1.5"
+              >
+                Why it mattered
+              </p>
+              <p class="text-white/65 text-sm leading-relaxed">
+                {{ study.outcome }}
+              </p>
             </div>
 
             <!-- Quote if available -->
-            <p v-if="study.quote" class="text-white/35 text-xs italic leading-relaxed border-t border-white/[0.07] pt-4">
+            <p
+              v-if="study.quote"
+              class="text-white/35 text-xs italic leading-relaxed border-t border-white/[0.07] pt-4"
+            >
               "{{ study.quote }}"
             </p>
           </div>

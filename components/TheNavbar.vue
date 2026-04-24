@@ -2,13 +2,23 @@
   <nav
     :class="[
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      scrolled ? 'bg-brand-navy/95 backdrop-blur-xl border-b border-white/8 py-3' : 'bg-transparent py-5',
+      scrolled
+        ? 'bg-brand-navy/95 backdrop-blur-xl border-b border-white/8 py-3'
+        : 'bg-transparent py-5',
     ]"
   >
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2.5 group">
-        <img src="/logo.svg" alt="Acefluento" class="h-9 w-auto" width="180" height="36" decoding="async" fetchpriority="high" />
+        <img
+          src="/logo.svg"
+          alt="Acefluento"
+          class="h-9 w-auto"
+          width="180"
+          height="36"
+          decoding="async"
+          fetchpriority="high"
+        />
       </a>
 
       <!-- Desktop Nav -->
@@ -33,11 +43,21 @@
       <!-- Mobile hamburger -->
       <button
         class="md:hidden p-2 text-white/70 hover:text-white transition-colors"
-        @click="mobileOpen = true"
         aria-label="Open menu"
+        @click="mobileOpen = true"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
       </button>
     </div>
@@ -58,20 +78,41 @@
         class="fixed inset-y-0 right-0 w-72 bg-brand-navy-2 border-l border-white/[0.08] z-50 md:hidden flex flex-col shadow-2xl"
       >
         <!-- Header -->
-        <div class="flex items-center justify-between px-5 py-4 border-b border-white/[0.08]">
-          <a href="/" class="flex items-center gap-2" @click="mobileOpen = false">
+        <div
+          class="flex items-center justify-between px-5 py-4 border-b border-white/[0.08]"
+        >
+          <a
+            href="/"
+            class="flex items-center gap-2"
+            @click="mobileOpen = false"
+          >
             <svg class="h-7 w-auto" viewBox="0 0 18 20" fill="none">
-              <path fill="#D7263D" d="M9 0.5C4 3 0 6 0 9.5C0 13 2.5 15.5 6 15C4.8 16 5 18 4 19.5H14C13 18 13.2 16 12 15C15.5 15.5 18 13 18 9.5C18 6 14 3 9 0.5Z"/>
+              <path
+                fill="#D7263D"
+                d="M9 0.5C4 3 0 6 0 9.5C0 13 2.5 15.5 6 15C4.8 16 5 18 4 19.5H14C13 18 13.2 16 12 15C15.5 15.5 18 13 18 9.5C18 6 14 3 9 0.5Z"
+              />
             </svg>
-            <span class="text-base font-bold tracking-tight">ace<span class="text-brand-red">fluento</span></span>
+            <span class="text-base font-bold tracking-tight"
+              >ace<span class="text-brand-red">fluento</span></span
+            >
           </a>
           <button
             class="p-2 text-white/50 hover:text-white transition-colors"
-            @click="mobileOpen = false"
             aria-label="Close menu"
+            @click="mobileOpen = false"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -91,7 +132,11 @@
 
         <!-- CTA -->
         <div class="px-5 py-5 border-t border-white/[0.08]">
-          <a href="#contact" class="btn-primary text-sm w-full text-center block" @click="mobileOpen = false">
+          <a
+            href="#contact"
+            class="btn-primary text-sm w-full text-center block"
+            @click="mobileOpen = false"
+          >
             Book a Strategy Call
           </a>
         </div>

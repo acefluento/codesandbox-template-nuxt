@@ -18,7 +18,9 @@
             class="w-full text-left px-7 py-5 flex items-center justify-between gap-4 group"
             @click="toggle(i)"
           >
-            <span class="font-semibold text-base group-hover:text-white/90 transition-colors">
+            <span
+              class="font-semibold text-base group-hover:text-white/90 transition-colors"
+            >
               {{ faq.question }}
             </span>
             <svg
@@ -28,11 +30,18 @@
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </button>
           <div v-if="openIndex === i" class="px-7 pb-6">
-            <p class="text-white/55 text-sm leading-relaxed">{{ faq.answer }}</p>
+            <p class="text-white/55 text-sm leading-relaxed">
+              {{ faq.answer }}
+            </p>
           </div>
         </div>
       </div>

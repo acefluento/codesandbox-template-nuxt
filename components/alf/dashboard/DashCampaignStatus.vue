@@ -3,23 +3,44 @@
     <div class="flex items-center justify-between mb-1">
       <h2 class="font-bold text-sm text-white">Review Request Campaigns</h2>
     </div>
-    <p class="text-white/35 text-xs mb-4">18 sent this month · 3 reviews generated</p>
+    <p class="text-white/35 text-xs mb-4">
+      18 sent this month · 3 reviews generated
+    </p>
 
     <div class="space-y-2.5">
-      <div v-for="campaign in campaigns" :key="campaign.id" class="flex items-center gap-3">
+      <div
+        v-for="campaign in campaigns"
+        :key="campaign.id"
+        class="flex items-center gap-3"
+      >
         <!-- Avatar -->
-        <div class="w-7 h-7 rounded-full bg-brand-blue/15 flex items-center justify-center flex-shrink-0">
-          <span class="text-brand-blue text-xs font-bold">{{ campaign.residentName.split(' ').map(p => p[0]).join('') }}</span>
+        <div
+          class="w-7 h-7 rounded-full bg-brand-blue/15 flex items-center justify-center flex-shrink-0"
+        >
+          <span class="text-brand-blue text-xs font-bold">{{
+            campaign.residentName
+              .split(' ')
+              .map((p) => p[0])
+              .join('')
+          }}</span>
         </div>
 
         <!-- Name + channel -->
         <div class="flex-1 min-w-0">
-          <p class="text-white text-xs font-medium truncate">{{ campaign.residentName }}</p>
-          <p class="text-white/30 text-xs">{{ campaign.channel.toUpperCase() }} · {{ platformLabel[campaign.platform] }}</p>
+          <p class="text-white text-xs font-medium truncate">
+            {{ campaign.residentName }}
+          </p>
+          <p class="text-white/30 text-xs">
+            {{ campaign.channel.toUpperCase() }} ·
+            {{ platformLabel[campaign.platform] }}
+          </p>
         </div>
 
         <!-- Status badge -->
-        <span class="text-xs px-2 py-0.5 rounded-full flex-shrink-0" :class="statusStyles[campaign.status]">
+        <span
+          class="text-xs px-2 py-0.5 rounded-full flex-shrink-0"
+          :class="statusStyles[campaign.status]"
+        >
           {{ campaign.status }}
         </span>
       </div>
