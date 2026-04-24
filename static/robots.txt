@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /alf-dashboard
+Sitemap: https://acefluento.com/sitemap.xml

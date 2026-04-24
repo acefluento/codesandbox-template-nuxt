@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-  title: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+  title: 'Acefluento | Web Design & Digital Marketing | Cleveland',
 
   htmlAttrs: { lang: 'en' },
 
@@ -14,7 +14,7 @@ export default {
       hid: 'description',
       name: 'description',
       content:
-        'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
+        'Acefluento is a Cleveland web design and digital marketing agency. We build websites, campaigns, and follow-up systems that turn attention into clients.',
     },
 
     { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' },
@@ -27,13 +27,13 @@ export default {
     {
       hid: 'og:title',
       property: 'og:title',
-      content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+      content: 'Acefluento | Web Design & Digital Marketing | Cleveland',
     },
     {
       hid: 'og:description',
       property: 'og:description',
       content:
-        'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
+        'Acefluento is a Cleveland web design and digital marketing agency. We build websites, campaigns, and follow-up systems that turn attention into clients.',
     },
     { hid: 'og:url', property: 'og:url', content: 'https://acefluento.com/' },
     { hid: 'og:image', property: 'og:image', content: 'https://acefluento.com/og-image.png' },
@@ -45,13 +45,13 @@ export default {
     {
       hid: 'twitter:title',
       name: 'twitter:title',
-      content: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
+      content: 'Acefluento | Web Design & Digital Marketing | Cleveland',
     },
     {
       hid: 'twitter:description',
       name: 'twitter:description',
       content:
-        'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
+        'Acefluento is a Cleveland web design and digital marketing agency. We build websites, campaigns, and follow-up systems that turn attention into clients.',
     },
     { hid: 'twitter:image', name: 'twitter:image', content: 'https://acefluento.com/og-image.png' },
   ],
@@ -81,10 +81,20 @@ export default {
       hid: 'org-schema',
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'Organization',
+        '@type': 'LocalBusiness',
         name: 'Acefluento',
         url: 'https://acefluento.com/',
         logo: 'https://acefluento.com/logo.png',
+        telephone: '+12168083109',
+        email: 'hello@acefluento.com',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Cleveland',
+          addressRegion: 'OH',
+          addressCountry: 'US',
+        },
+        areaServed: 'Cleveland, OH',
+        priceRange: '$$',
         sameAs: [],
       }),
     },
