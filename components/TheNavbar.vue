@@ -7,8 +7,11 @@
   >
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2.5 group">
-        <img src="/logo.svg" alt="Acefluento" class="h-9 w-auto" width="180" height="36" decoding="async" fetchpriority="high" />
+      <a href="/" class="flex items-center gap-2 group" aria-label="Acefluento">
+        <svg class="h-8 w-auto flex-shrink-0" viewBox="0 0 18 20" fill="none" aria-hidden="true">
+          <path fill="#D7263D" d="M9 0.5C4 3 0 6 0 9.5C0 13 2.5 15.5 6 15C4.8 16 5 18 4 19.5H14C13 18 13.2 16 12 15C15.5 15.5 18 13 18 9.5C18 6 14 3 9 0.5Z"/>
+        </svg>
+        <span class="text-lg font-extrabold tracking-tight leading-none">ace<span class="text-brand-red">fluento</span></span>
       </a>
 
       <!-- Desktop Nav -->
