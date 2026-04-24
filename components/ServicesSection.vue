@@ -19,13 +19,22 @@
       <!-- Services grid -->
       <div v-stagger="100" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <div
-          v-for="service in services"
+          v-for="(service, i) in services"
           :key="service.title"
           class="card-dark group relative flex flex-col"
         >
           <!-- Icon -->
-          <div class="w-11 h-11 rounded-xl bg-brand-blue/12 border border-brand-blue/20 flex items-center justify-center mb-5 group-hover:bg-brand-blue/20 transition-colors">
-            <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+          <div
+            class="w-11 h-11 rounded-xl border flex items-center justify-center mb-5 transition-colors"
+            :class="i === 2 || i === 4
+              ? 'bg-brand-emerald/12 border-brand-emerald/20 group-hover:bg-brand-emerald/20'
+              : 'bg-brand-blue/12 border-brand-blue/20 group-hover:bg-brand-blue/20'"
+          >
+            <svg
+              class="w-5 h-5"
+              :class="i === 2 || i === 4 ? 'text-brand-emerald' : 'text-brand-blue'"
+              fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24"
+            >
               <path stroke-linecap="round" stroke-linejoin="round" :d="service.iconPath" />
             </svg>
           </div>

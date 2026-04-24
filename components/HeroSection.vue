@@ -4,6 +4,7 @@
     <div class="absolute inset-0 pointer-events-none">
       <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-brand-blue/6 rounded-full blur-3xl animate-float"></div>
       <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-brand-red/4 rounded-full blur-3xl animate-float-delayed"></div>
+      <div class="absolute top-1/2 right-1/3 w-[300px] h-[300px] bg-brand-emerald/3 rounded-full blur-3xl"></div>
       <div
         class="absolute inset-0 opacity-[0.025]"
         style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 64px 64px;"
@@ -37,8 +38,12 @@
 
           <!-- Bullets -->
           <ul class="animate-hero-4 space-y-3 mb-10">
-            <li v-for="bullet in bullets" :key="bullet" class="flex items-center gap-3 text-white/65 text-sm">
-              <svg class="w-4 h-4 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <li v-for="(bullet, i) in bullets" :key="bullet" class="flex items-center gap-3 text-white/65 text-sm">
+              <svg
+                class="w-4 h-4 flex-shrink-0"
+                :class="i === 0 ? 'text-brand-blue' : 'text-brand-emerald'"
+                fill="currentColor" viewBox="0 0 20 20"
+              >
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
               </svg>
               {{ bullet }}
