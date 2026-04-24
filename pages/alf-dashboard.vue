@@ -1,53 +1,95 @@
 <template>
   <div class="min-h-screen bg-brand-navy text-white font-sans flex flex-col">
-
     <!-- Dashboard topbar -->
-    <header class="bg-brand-navy-2 border-b border-white/[0.08] px-6 py-4 flex items-center justify-between flex-shrink-0 z-20">
+    <header
+      class="bg-brand-navy-2 border-b border-white/[0.08] px-6 py-4 flex items-center justify-between flex-shrink-0 z-20"
+    >
       <div class="flex items-center gap-4">
         <a href="/" class="flex items-center gap-2.5">
-          <img src="/logo.svg" alt="Acefluento" class="h-7 w-auto" width="140" height="28" />
+          <img
+            src="/logo.svg"
+            alt="Acefluento"
+            class="h-7 w-auto"
+            width="140"
+            height="28"
+          />
         </a>
         <div class="hidden sm:flex items-center gap-2 text-white/30 text-xs">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg
+            class="w-3.5 h-3.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
           </svg>
           <span class="text-white/60 font-medium">Magnolia Manor</span>
         </div>
       </div>
 
       <div class="flex items-center gap-3">
-        <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 text-xs font-medium">
+        <span
+          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 text-xs font-medium"
+        >
           <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+            <path
+              fill-rule="evenodd"
+              d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+              clip-rule="evenodd"
+            />
           </svg>
           Demo Mode
         </span>
-        <a href="/alf-reputation-engine#demo" class="btn-primary text-xs px-4 py-2">
+        <a
+          href="/alf-reputation-engine#demo"
+          class="btn-primary text-xs px-4 py-2"
+        >
           Book a Real Demo
         </a>
       </div>
     </header>
 
     <div class="flex flex-1 overflow-hidden">
-
       <!-- Sidebar (desktop) -->
-      <aside class="hidden lg:flex flex-col w-56 bg-brand-navy-2 border-r border-white/[0.08] p-5 flex-shrink-0">
+      <aside
+        class="hidden lg:flex flex-col w-56 bg-brand-navy-2 border-r border-white/[0.08] p-5 flex-shrink-0"
+      >
         <nav class="space-y-1">
           <a
             v-for="item in sidebarItems"
             :key="item.label"
             href="#"
             class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors"
-            :class="item.active
-              ? 'bg-brand-blue/15 text-brand-blue'
-              : 'text-white/40 hover:text-white/70 hover:bg-white/[0.04]'"
+            :class="
+              item.active
+                ? 'bg-brand-blue/15 text-brand-blue'
+                : 'text-white/40 hover:text-white/70 hover:bg-white/[0.04]'
+            "
             @click.prevent="() => {}"
           >
-            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="item.icon" />
+            <svg
+              class="w-4 h-4 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                :d="item.icon"
+              />
             </svg>
             {{ item.label }}
-            <span v-if="item.badge" class="ml-auto text-xs px-1.5 py-0.5 rounded-full bg-brand-red/15 text-brand-red">
+            <span
+              v-if="item.badge"
+              class="ml-auto text-xs px-1.5 py-0.5 rounded-full bg-brand-red/15 text-brand-red"
+            >
               {{ item.badge }}
             </span>
           </a>
@@ -88,12 +130,22 @@
         <DashSentimentChart />
 
         <!-- CTA strip -->
-        <div class="bg-brand-navy-2 border border-white/[0.08] rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div
+          class="bg-brand-navy-2 border border-white/[0.08] rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+        >
           <div>
-            <p class="font-semibold text-white text-sm">This is a live demo for Magnolia Manor.</p>
-            <p class="text-white/40 text-xs mt-0.5">Ready to set this up for your facility? Book a call and we'll get you live in 48 hours.</p>
+            <p class="font-semibold text-white text-sm">
+              This is a live demo for Magnolia Manor.
+            </p>
+            <p class="text-white/40 text-xs mt-0.5">
+              Ready to set this up for your facility? Book a call and we'll get
+              you live in 48 hours.
+            </p>
           </div>
-          <a href="/alf-reputation-engine#demo" class="btn-primary text-sm flex-shrink-0">
+          <a
+            href="/alf-reputation-engine#demo"
+            class="btn-primary text-sm flex-shrink-0"
+          >
             Book a Demo Call
           </a>
         </div>
@@ -120,7 +172,12 @@ import DashCampaignStatus from '~/components/alf/dashboard/DashCampaignStatus.vu
 import DashSentimentChart from '~/components/alf/dashboard/DashSentimentChart.vue'
 import DashAiModal from '~/components/alf/dashboard/DashAiModal.vue'
 
-type SidebarItem = { label: string; icon: string; active: boolean; badge: string | null }
+type SidebarItem = {
+  label: string
+  icon: string
+  active: boolean
+  badge: string | null
+}
 
 const sidebarItems: SidebarItem[] = [
   {
@@ -157,15 +214,22 @@ interface DashboardData {
 
 export default Vue.extend({
   name: 'AlfDashboard',
-  components: { DashStatsBar, DashReviewFeed, DashPlatformBreakdown, DashCampaignStatus, DashSentimentChart, DashAiModal },
+  components: {
+    DashStatsBar,
+    DashReviewFeed,
+    DashPlatformBreakdown,
+    DashCampaignStatus,
+    DashSentimentChart,
+    DashAiModal,
+  },
+  data(): DashboardData {
+    return { modalOpen: false, activeReview: null, sidebarItems }
+  },
   head() {
     return {
       title: 'ALF Reputation Engine — Dashboard Demo | Magnolia Manor',
       meta: [{ name: 'robots', content: 'noindex,nofollow' }],
     }
-  },
-  data(): DashboardData {
-    return { modalOpen: false, activeReview: null, sidebarItems }
   },
   methods: {
     openAiModal(review: Review) {
@@ -174,7 +238,7 @@ export default Vue.extend({
       d.modalOpen = true
     },
     closeModal() {
-      (this.$data as DashboardData).modalOpen = false
+      ;(this.$data as DashboardData).modalOpen = false
     },
   },
 })

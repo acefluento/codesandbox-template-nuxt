@@ -6,7 +6,9 @@
       <AlfProblemBar />
       <AlfFeaturesSection />
       <AlfCaseStudy />
-      <InlineCta message="Families are reading reviews right now. Don't let a 2-star response cost you a move-in." />
+      <InlineCta
+        message="Families are reading reviews right now. Don't let a 2-star response cost you a move-in."
+      />
       <AlfHowItWorks />
       <AlfPricing />
       <AlfFaq />
@@ -23,7 +25,8 @@ export default Vue.extend({
   name: 'AlfReputationEngine',
   head() {
     return {
-      title: 'ALF Reputation Engine | Automated Review Management for Assisted Living',
+      title:
+        'ALF Reputation Engine | Automated Review Management for Assisted Living',
       meta: [
         {
           hid: 'description',
@@ -31,7 +34,11 @@ export default Vue.extend({
           content:
             'Monitor reviews across Google, Yelp, Facebook, and AssistedLivingCenter.com. Get AI-drafted responses. Run automated review request campaigns. Starting at $297/mo.',
         },
-        { property: 'og:title', content: 'ALF Reputation Engine | Automated Review Management for Assisted Living' },
+        {
+          property: 'og:title',
+          content:
+            'ALF Reputation Engine | Automated Review Management for Assisted Living',
+        },
         {
           property: 'og:description',
           content:

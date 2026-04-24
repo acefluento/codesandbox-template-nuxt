@@ -4,8 +4,10 @@ import Vue from 'vue'
 // Usage: v-reveal, v-reveal="'delay-200'", v-reveal="{ delay: 300, class: 'fade-up' }"
 Vue.directive('reveal', {
   inserted(el, binding) {
-    const delay = typeof binding.value === 'object' ? binding.value.delay || 0 : 0
-    const animClass = typeof binding.value === 'string' ? binding.value : 'fade-up'
+    const delay =
+      typeof binding.value === 'object' ? binding.value.delay || 0 : 0
+    const animClass =
+      typeof binding.value === 'string' ? binding.value : 'fade-up'
 
     el.style.opacity = '0'
     el.style.transition = 'none'

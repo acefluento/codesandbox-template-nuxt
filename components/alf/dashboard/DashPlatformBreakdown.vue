@@ -5,10 +5,16 @@
     <div class="space-y-4">
       <div v-for="platform in platforms" :key="platform.platform">
         <div class="flex items-center justify-between mb-1.5">
-          <span class="text-white/70 text-xs font-medium">{{ platform.displayName }}</span>
+          <span class="text-white/70 text-xs font-medium">{{
+            platform.displayName
+          }}</span>
           <div class="flex items-center gap-2">
-            <span class="text-xs font-bold" :class="platform.accentColor">{{ platform.currentRating }}★</span>
-            <span class="text-white/30 text-xs">({{ platform.reviewCount }})</span>
+            <span class="text-xs font-bold" :class="platform.accentColor"
+              >{{ platform.currentRating }}★</span
+            >
+            <span class="text-white/30 text-xs"
+              >({{ platform.reviewCount }})</span
+            >
           </div>
         </div>
         <div class="w-full h-1.5 bg-white/[0.06] rounded-full overflow-hidden">
