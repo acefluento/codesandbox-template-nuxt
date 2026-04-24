@@ -8,10 +8,10 @@
           <a href="/" class="flex items-center gap-2.5 mb-5">
             <div class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/20">
               <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                <path d="M12 2.5C8.5 2.5 3.5 6.5 3.5 11C3.5 14.5 5.8 16.8 9.5 16.2C8.2 16.8 8.5 18.8 7.2 20H16.8C15.5 18.8 15.8 16.8 14.5 16.2C18.2 16.8 20.5 14.5 20.5 11C20.5 6.5 15.5 2.5 12 2.5Z"/>
               </svg>
             </div>
-            <span class="text-xl font-bold tracking-tight">Ace<span class="text-brand-red">fluento</span></span>
+            <span class="text-xl font-bold tracking-tight">ace<span class="text-brand-red">fluento</span></span>
           </a>
           <p class="text-white/40 text-sm leading-relaxed max-w-xs">
             Acefluento builds modern growth systems for businesses that want clarity, trust, and conversion.
@@ -37,7 +37,7 @@
           <ul class="space-y-3">
             <li>
               <a href="tel:2168083109" class="text-white/45 text-sm hover:text-white transition-colors flex items-center gap-2">
-                <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-3.5 h-3.5 text-brand-emerald flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 216-808-3109
@@ -45,7 +45,7 @@
             </li>
             <li>
               <a href="mailto:Acefluento@gmail.com" class="text-white/45 text-sm hover:text-white transition-colors flex items-center gap-2">
-                <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-3.5 h-3.5 text-brand-emerald flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
@@ -71,7 +71,7 @@
                 rel="noopener noreferrer"
                 class="text-white/45 text-sm hover:text-white transition-colors flex items-center gap-2"
               >
-                <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-3.5 h-3.5 text-brand-emerald flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path :d="social.iconPath" />
                 </svg>
                 {{ social.name }}

@@ -17,7 +17,7 @@
       <div class="max-w-4xl mx-auto">
         <div class="relative">
           <!-- Vertical connector line -->
-          <div class="absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-brand-blue/40 via-brand-blue/20 to-transparent hidden sm:block"></div>
+          <div class="absolute left-8 top-8 bottom-8 w-px bg-gradient-to-b from-brand-blue/40 via-brand-emerald/25 to-transparent hidden sm:block"></div>
 
           <div v-stagger="130" class="space-y-6">
             <div
@@ -28,10 +28,16 @@
               <!-- Step number badge -->
               <div class="relative flex-shrink-0">
                 <div
-                  class="w-16 h-16 rounded-2xl border-2 flex items-center justify-center transition-all duration-300 group-hover:border-brand-blue/60 group-hover:bg-brand-blue/10"
-                  :class="step.number === '01' ? 'border-brand-blue/50 bg-brand-blue/10' : 'border-white/15 bg-brand-navy-2'"
+                  class="w-16 h-16 rounded-2xl border-2 flex items-center justify-center transition-all duration-300"
+                  :class="step.number === '01' ? 'border-brand-blue/50 bg-brand-blue/10 group-hover:border-brand-blue/60 group-hover:bg-brand-blue/10' :
+                          step.number === '03' ? 'border-brand-emerald/50 bg-brand-emerald/10 group-hover:border-brand-emerald/60 group-hover:bg-brand-emerald/10' :
+                          'border-white/15 bg-brand-navy-2 group-hover:border-brand-blue/60 group-hover:bg-brand-blue/10'"
                 >
-                  <span class="text-lg font-black" :class="step.number === '01' ? 'text-brand-blue' : 'text-white/40'">
+                  <span class="text-lg font-black"
+                    :class="step.number === '01' ? 'text-brand-blue' :
+                            step.number === '03' ? 'text-brand-emerald' :
+                            'text-white/40'"
+                  >
                     {{ step.number }}
                   </span>
                 </div>

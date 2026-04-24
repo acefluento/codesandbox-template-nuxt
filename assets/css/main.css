@@ -120,6 +120,12 @@
   .glow-blue {
     box-shadow: 0 0 60px rgba(37, 99, 235, 0.12);
   }
+  .glow-green {
+    box-shadow: 0 0 60px rgba(16, 185, 129, 0.10);
+  }
+  .section-label-green {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-emerald/30 bg-brand-emerald/10 text-brand-emerald text-sm font-medium;
+  }
   .noise-overlay {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
   }
