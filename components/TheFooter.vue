@@ -6,9 +6,11 @@
         <!-- Column 1: Brand -->
         <div class="col-span-2 lg:col-span-1">
           <a href="/" class="flex items-center gap-2.5 mb-5">
-            <div class="w-9 h-9 rounded-xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/20">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            <div class="w-9 h-9 rounded-xl bg-black flex items-center justify-center shadow-lg shadow-brand-red/20 border border-white/10">
+              <!-- Acefluento spade mark -->
+              <svg class="w-6 h-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 8C42 22 16 38 16 60a18 18 0 0 0 32 11l-3 13c-2 6-7 9-13 11h36c-6-2-11-5-13-11l-3-13a18 18 0 0 0 32-11C84 38 58 22 50 8z" fill="#ffffff"/>
+                <path d="M50 30 L32 75 H40 L43 65 H57 L60 75 H68 L50 30zm0 12 5 16h-10z" fill="#B82F37"/>
               </svg>
             </div>
             <span class="text-xl font-bold tracking-tight">Ace<span class="text-brand-red">fluento</span></span>
