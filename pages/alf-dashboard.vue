@@ -5,7 +5,7 @@
     <header class="bg-brand-navy-2 border-b border-white/[0.08] px-6 py-4 flex items-center justify-between flex-shrink-0 z-20">
       <div class="flex items-center gap-4">
         <a href="/" class="flex items-center gap-2.5">
-          <img src="/logo.svg" alt="Acefluento" class="h-7 w-auto" width="140" height="28" />
+          <img src="/logo.png" alt="Acefluento" class="h-7 w-auto" width="28" height="28" />
         </a>
         <div class="hidden sm:flex items-center gap-2 text-white/30 text-xs">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
