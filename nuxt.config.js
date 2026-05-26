@@ -1,6 +1,14 @@
 export default {
   target: 'static',
 
+  router: {
+    trailingSlash: false,
+  },
+
+  generate: {
+    fallback: '404.html',
+  },
+
   head: {
   title: 'Acefluento | Websites, Marketing & Growth Systems for Modern Businesses',
 
@@ -35,7 +43,6 @@ export default {
       content:
         'Acefluento builds websites, campaigns, and follow-up systems that help businesses turn attention into clients. Book a strategy call.',
     },
-    { hid: 'og:url', property: 'og:url', content: 'https://acefluento.com/' },
     { hid: 'og:image', property: 'og:image', content: 'https://acefluento.com/og-image.png' },
     { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
     { hid: 'og:image:height', property: 'og:image:height', content: '630' },
@@ -57,8 +64,6 @@ export default {
   ],
 
   link: [
-    { rel: 'canonical', href: 'https://acefluento.com/' },
-
     // Favicons
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
