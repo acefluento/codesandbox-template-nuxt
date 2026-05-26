@@ -16,7 +16,7 @@
           <p class="text-white/40 text-sm leading-relaxed max-w-xs">
             Acefluento builds modern growth systems for businesses that want clarity, trust, and conversion.
           </p>
-          <p class="text-white/30 text-xs mt-4">Based in Cleveland, OH</p>
+          <p class="text-white/40 text-xs mt-4">Cleveland, OH</p>
         </div>
 
         <!-- Column 2: Navigation -->
@@ -44,13 +44,21 @@
               </a>
             </li>
             <li>
-              <a href="mailto:Acefluento@gmail.com" class="text-white/45 text-sm hover:text-white transition-colors flex items-center gap-2">
+              <a href="mailto:hello@acefluento.com" class="text-white/45 text-sm hover:text-white transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                Acefluento@gmail.com
+                hello@acefluento.com
               </a>
+            </li>
+            <li>
+              <span class="text-white/45 text-sm flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 text-brand-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+                Cleveland, OH
+              </span>
             </li>
             <li>
               <a href="#contact" class="text-white/45 text-sm hover:text-white transition-colors">
